@@ -6,7 +6,46 @@
 .middle{
   background-color: darkgray;
   margin: 0 auto;
-  height: 500px;
+  padding: 20px;
+  height: auto;
   width: 60%;
 }
+.picture{
+  width: 400px;
+}
+.top{
+  display: flex;
+  flex-direction: row;
+  /* padding: 20px; */
+}
+.about{
+  /* margin-left: 10px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* justify-content: space-around; */
+}
+.info{
+  /* background-color: red; */
+  width: 100%;
+  margin: 0 auto;
+}
+.info h1{
+  text-align: center;
+}
+.about h4{
+  align-self: center;
+  color: #2e2e2e;
+}
+/* .info h1{
+  text-align: center;
+} */
 
+.button{
+  /* position: absolute; */
+  /* margin: 0 auto; */
+
+  /* display: flex;
+  flex-direction: row; */
+  align-self: center;
+}
