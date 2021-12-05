@@ -15,13 +15,17 @@ import CezsUc from './images/anothercez.jpg'
 import Hoopstre from './images/hoopsuno.jpg'
 import Arttre from './images/arttre.jpg'
 import Tracktre from './images/tracktre.jpg'
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import { Button, Modal } from 'semantic-ui-react'
+import emailjs from 'emailjs-com'
+import{ init } from 'emailjs-com';
 
 function App() {
   const [open, setOpen] = useState(false)
   const [type, setType] = useState(null)
   const [selectedPath, setSelectedPath] = useState(null)
+  const form = useRef();
+
   const toWeb = (web) =>{
     window.open(web, '_blank')
 }
@@ -30,6 +34,19 @@ const selectPicture = (pic, type) => {
   setType(type)
   setOpen(true)
   setSelectedPath(pic)
+}
+
+const sendEmail = e => {
+  e.preventDefault();
+  // console.log(e)
+
+  emailjs.sendForm('service_kxdorjg', 'template_h3ab9xv', form.current, 'user_MChuPfMmdUh7yV5A7XgUn')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+    form.current.reset()
 }
   return (
     <div className="App">
@@ -225,20 +242,31 @@ const selectPicture = (pic, type) => {
         </div>
         <div className="section">
           <div className="title">
-
             <h2 className="titlewriting">story</h2>
           </div>
-          <p>Born and raised in Izmir, Turkey, I came to the US in 2010 to continue my education as a student-athlete. 
-            Upon graduating from T.C. Williams High School in 2014 and Thiel College in 2018 with a bachelors degree in International Business studies, I played professional basketball with Sigortam Net ITU Basket in Istanbul for a year. 
-            In 2020, I pursued my curiosity for computers and attended a software engineering bootcamp at Flatiron School to learn full-stack web development. 
-            So far it has been a smooth transition as I channel the discipline and work ethic gained from basketball into this nonstop evolving industry. 
-            I spend most of my time working on projects, studying computer science fundamentals, and incorporating new technologies in quest to mastery.</p>
+          <p>Born and raised in Izmir, Turkey, I moved to the United States to further education as a student-athlete in 2010.
+            Upon graduating from T.C. Williams High School in 2014 and Thiel College in 2018 with a bachelors degree in International Business studies, I signed with Sigortam Net ITU Basket to play professional basketball in Istanbul.
+            While it was a dream come true to hoop professionally, I pursued my curiosity in computers for a stable career.
+            In 2020, I attended the Flatiron School and learned full-stack web development with Ruby on Rails and React.
+            In coding I recognized and embraced the process from basketball, this time spending countless hours on Google researching rather than on the hardwood, and to tackle problems rather than for sport, which fuels me everyday. 
+          </p>
         </div>
         <div className="section">
         <div className="title">
-
-          <h2 className="titlewriting">contact me hoe</h2>
+          <h2 className="titlewriting">contact me</h2>
         </div>
+        <form ref={form} onSubmit={e => sendEmail(e)} className="contactform">
+          <div>
+            <input type="text" name="user_name" placeholder="Your Name"/>
+          </div>
+          <div>
+          <input type="email" name="user_email" placeholder="Your Email"/>
+            </div>
+            <div>
+          <textarea name="message" placeholder="Your Message"/>
+              </div>
+          <input type="submit" value="Send" />
+        </form>
         </div>
 
       </div>
