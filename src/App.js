@@ -10,7 +10,12 @@ import Trackerdos from './images/trackerdos.jpg'
 import Hoopsuno from './images/hoopsdos.jpg'
 import Hoopsdos from './images/hoopstre.jpg'
 import Bubleuno from './images/bubledos.jpg'
+import BubleTre from './images/bubleone.jpg'
 import Bubledos from './images/bubletre.jpg'
+import CezsUc from './images/anothercez.jpg'
+import Hoopstre from './images/hoopsuno.jpg'
+import Arttre from './images/arttre.jpg'
+import Tracktre from './images/tracktre.jpg'
 function App() {
   const toWeb = (web) =>{
     window.open(web, '_blank')
@@ -19,7 +24,7 @@ function App() {
     <div className="App">
       <div className="middle">
         <div className="top">
-          <img src={Pic} className="picture"/>
+          <img src={Pic} className="picture" alt='mert'/>
           <div className="info">
             <div className="about">
               <div>
@@ -45,7 +50,8 @@ function App() {
                   </div>
 
                 </div>
-              <div className="skills">
+
+              <div>
           <h2>technical skills</h2>
             <p>JavaScript, React, Redux,  Node.js, Express, MongoDB, React Native, React Navigation, Ruby, Ruby on Rails, SQL, PostgreSQL, HTML, CSS</p>
         </div>
@@ -54,96 +60,151 @@ function App() {
         </div>
         
         <div className="section">
+          <div className="title">
+
           <h2 className="titlewriting">projects</h2>
+          </div>
           <div className="projek">
             <div className="title">
               <div>
-              <h3>Instrumentalists app</h3>
+                <h3 className="titlewriting">Instrumentalists app</h3>
+
               </div>
-              <div>
-                <h4 onClick={() => toWeb('https://youtu.be/X6erehzcO3g')}>demo</h4>
+
+              <div className="title">
+                <div className="button">
+                <h4 onClick={() => toWeb('https://youtu.be/X6erehzcO3g')}>watch demo</h4>
               </div>
-              <div>
+              <div className="button">
                 <h4 onClick={() => toWeb('http://cezsmusic.com')}>website</h4>
               </div>
             </div>
+            </div>
 
             <p>Social network for instrumentalists</p>
-            <img src={CezsBir} className="phonepic"/>
-            <img src={CezsIki} className="phonepic"/>
+            <div className="images">
+              <img src={CezsBir} className="phonepic" alt='cezs1'/>
+              <img src={CezsIki} className="phonepic" alt='cez2'/>
+              <img src={CezsUc} className="phonepic" alt='cez3'/>
+
+            </div>
+
           </div>
           <div className="projek">
           <div className="title">
               <div>
-              <h3>Artstone Marble and Granite</h3>
+              <h3 className="titlewriting">Artstone Marble and Granite</h3>
               </div>
-              <div>
+              <div className="button">
                 <h4 onClick={() => toWeb('http://theartstone.com')}>website</h4>
               </div>
             </div>
             <p>Official website of marble and granite fabricator and installer.</p>
-            <img src={Artstoneone} className="projectpic"/>
-            <img src={Arttwo} className="projectpic"/>
+            <div className="images">
+              <img src={Artstoneone} className="projectpic" alt='art1'/>
+              <img src={Arttwo} className="projectpic" alt='art2'/>
+              <img src={Arttre} className="projectpic" alt='art3'/>
 
+            </div>
           </div>
           <div className="projek">
             <div className="title">
               <div>
-              <h3>Project Tracker app</h3>
+              <h3 className="titlewriting">Project Tracker app</h3>
               </div>
-              <div>
-                <h4 onClick={() => toWeb('https://vimeo.com/483887327')}>watch demo</h4>
+              <div className="title">
+                <div className="button">
+                  <h4 onClick={() => toWeb('https://vimeo.com/483887327')}>watch demo</h4>
+                </div>
+                <div className="button">
+                  <h4 onClick={() => toWeb('https://vimeo.com/483887327')}>github</h4>
+
+                </div>
+
               </div>
             </div>
             <p>Project development framework.</p>
-            <img src={Trackeruno} className="projectpic"/>
-            <img src={Trackerdos} className="projectpic"/>
+            <div className="images">
+              <img src={Trackerdos} className="projectpic" alt='trak1'/>
+              <img src={Tracktre} className="projectpic" alt='trak2'/>
+              <img src={Trackeruno} className="projectpic" alt='trak3'/>
 
+            </div>
 
 
           </div>
           <div className="projek">
           <div className="title">
               <div>
-              <h3>Beatbox Bubble app</h3>
+              <h3 className="titlewriting">Beatbox Bubble app</h3>
               </div>
-              <div>
-                <h4 onClick={() => toWeb("https://vimeo.com/452664970")}>watch demo</h4>
+  
+              <div className="title">
+                <div className="button">
+                  <h4 onClick={() => toWeb("https://vimeo.com/452664970")}>watch demo</h4>
+                </div>
+                <div className="button">
+                  <h4 onClick={() => toWeb('https://vimeo.com/483887327')}>github</h4>
+
+                </div>
+
               </div>
             </div>
             <p>A platform to sample your sound and share with others.</p>
-            <img src={Bubleuno} className="projectpic"/>
-            <img src={Bubledos} className="projectpic"/>
+            <div className="images">
 
+              <img src={Bubleuno} className="projectpic" alt='bub1'/>
+              <img src={BubleTre} className="projectpic" alt='bub2'/>
+              <img src={Bubledos} className="projectpic" alt='bub3'/>
+
+            </div>
 
           </div>
           <div className="projek">
           <div className="title">
               <div>
-              <h3>Hooper app</h3>
+              <h3 className="titlewriting">Hooper app</h3>
               </div>
-              <div>
-                <h4 onClick={() => toWeb('https://vimeo.com/452664239')}>watch demo</h4>
+          
+              <div className="title">
+                <div className="button">
+                  <h4 onClick={() => toWeb('https://vimeo.com/452664239')}>watch demo</h4>
+                </div>
+                <div className="button">
+                  <h4 onClick={() => toWeb('https://vimeo.com/483887327')}>github</h4>
+
+                </div>
+
               </div>
             </div>
             <p>A platform to discover basketball courts and best competition</p>
-            <img src={Hoopsuno} className="projectpic"/>
-            <img src={Hoopsdos} className="projectpic"/>
+            <div className="images">
+              <img src={Hoopstre} className="projectpic" alt='hop1'/>
+              <img src={Hoopsuno} className="projectpic" alt='hop2'/>
+              <img src={Hoopsdos} className="projectpic" alt='hop3'/>
+
+
+            </div>
 
 
           </div>
         </div>
         <div className="section">
-          <h2>story</h2>
-          <p>Born and raised in Izmir, Turkey, I came to the US in 2010, seeking to continue my education as a student-athlete. 
-            Upon graduating from T.C. Williams High School in 2014 and Thiel College in 2018 with a bachelors degree in International Business studies, I played professional basketball for a year with Sigortam Net ITU Basket in Istanbul. 
-            In 2020, I pursued my passion for technology by attending a software engineering bootcamp at Flatiron School to learn full-stack web development. 
+          <div className="title">
+
+            <h2 className="titlewriting">story</h2>
+          </div>
+          <p>Born and raised in Izmir, Turkey, I came to the US in 2010 to continue my education as a student-athlete. 
+            Upon graduating from T.C. Williams High School in 2014 and Thiel College in 2018 with a bachelors degree in International Business studies, I played professional basketball with Sigortam Net ITU Basket in Istanbul for a year. 
+            In 2020, I pursued my curiosity for computers and attended a software engineering bootcamp at Flatiron School to learn full-stack web development. 
             So far it has been a smooth transition as I channel the discipline and work ethic gained from basketball into this nonstop evolving industry. 
             I spend most of my time working on projects, studying computer science fundamentals, and incorporating new technologies in quest to mastery.</p>
         </div>
         <div className="section">
-          <h2>contact me hoe</h2>
+        <div className="title">
 
+          <h2 className="titlewriting">contact me hoe</h2>
+        </div>
         </div>
 
       </div>
