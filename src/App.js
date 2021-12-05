@@ -2,7 +2,15 @@ import './App.css';
 import Pic from './images/mert-cropped.jpg'
 import { Button } from 'semantic-ui-react'
 import CezsBir from './images/portfolio2.jpg'
-import CezsIki from './images/portfolioshot.jpg'
+import CezsIki from './images/porfolioshot.jpg'
+import Artstoneone from './images/artstoneone.jpg'
+import Arttwo from './images/arttwo.jpg'
+import Trackeruno from './images/trackeruno.jpg'
+import Trackerdos from './images/trackerdos.jpg'
+import Hoopsuno from './images/hoopsdos.jpg'
+import Hoopsdos from './images/hoopstre.jpg'
+import Bubleuno from './images/bubledos.jpg'
+import Bubledos from './images/bubletre.jpg'
 function App() {
   const toWeb = (web) =>{
     window.open(web, '_blank')
@@ -15,12 +23,12 @@ function App() {
           <div className="info">
             <div className="about">
               <div>
-                <h1>Mert Özkaynak</h1>
+                <h1> Mert Özkaynak </h1>
                 
               </div>
               <div>
                   <Button circular icon="github" onClick={() => toWeb('https://github.com/mertoz41')} />
-                  <Button circular color="linkedin" icon="linkedin" onClick={() => this.toWeb('https://www.linkedin.com/in/mert-ozkaynak/')}/>
+                  <Button circular color="linkedin" icon="linkedin" onClick={() => toWeb('https://www.linkedin.com/in/mert-ozkaynak')}/>
 
             </div>
               
@@ -46,27 +54,82 @@ function App() {
         </div>
         
         <div className="section">
-          <h2>projects</h2>
+          <h2 className="titlewriting">projects</h2>
           <div className="projek">
-            <h3>Instrumentalists app</h3>
+            <div className="title">
+              <div>
+              <h3>Instrumentalists app</h3>
+              </div>
+              <div>
+                <h4 onClick={() => toWeb('https://youtu.be/X6erehzcO3g')}>demo</h4>
+              </div>
+              <div>
+                <h4 onClick={() => toWeb('http://cezsmusic.com')}>website</h4>
+              </div>
+            </div>
+
             <p>Social network for instrumentalists</p>
-            <img src={CezsBir} className="picture"/>
-            <img src={CezsIki} className="picture"/>
+            <img src={CezsBir} className="phonepic"/>
+            <img src={CezsIki} className="phonepic"/>
           </div>
           <div className="projek">
-            <h3>Artstone Marble and Granite Offical Website</h3>
+          <div className="title">
+              <div>
+              <h3>Artstone Marble and Granite</h3>
+              </div>
+              <div>
+                <h4 onClick={() => toWeb('http://theartstone.com')}>website</h4>
+              </div>
+            </div>
+            <p>Official website of marble and granite fabricator and installer.</p>
+            <img src={Artstoneone} className="projectpic"/>
+            <img src={Arttwo} className="projectpic"/>
 
           </div>
           <div className="projek">
-            <h3>Project Tracker app</h3>
+            <div className="title">
+              <div>
+              <h3>Project Tracker app</h3>
+              </div>
+              <div>
+                <h4 onClick={() => toWeb('https://vimeo.com/483887327')}>watch demo</h4>
+              </div>
+            </div>
+            <p>Project development framework.</p>
+            <img src={Trackeruno} className="projectpic"/>
+            <img src={Trackerdos} className="projectpic"/>
+
+
 
           </div>
           <div className="projek">
-            <h3>Beatbox Bubble app</h3>
+          <div className="title">
+              <div>
+              <h3>Beatbox Bubble app</h3>
+              </div>
+              <div>
+                <h4 onClick={() => toWeb("https://vimeo.com/452664970")}>watch demo</h4>
+              </div>
+            </div>
+            <p>A platform to sample your sound and share with others.</p>
+            <img src={Bubleuno} className="projectpic"/>
+            <img src={Bubledos} className="projectpic"/>
+
 
           </div>
           <div className="projek">
-            <h3>Hooper app</h3>
+          <div className="title">
+              <div>
+              <h3>Hooper app</h3>
+              </div>
+              <div>
+                <h4 onClick={() => toWeb('https://vimeo.com/452664239')}>watch demo</h4>
+              </div>
+            </div>
+            <p>A platform to discover basketball courts and best competition</p>
+            <img src={Hoopsuno} className="projectpic"/>
+            <img src={Hoopsdos} className="projectpic"/>
+
 
           </div>
         </div>

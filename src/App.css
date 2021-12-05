@@ -16,6 +16,14 @@
   /* box-shadow: 0px 0px 20px 8px #9a9a9a; */
 
 }
+.projectpic{
+  width: 230px;
+  height: 150px;
+}
+.phonepic{
+  width: 230px;
+
+}
 .top{
   display: flex;
   flex-direction: row;
@@ -31,6 +39,15 @@
   border-radius: 20px;
   box-shadow: 0px 0px 30px 2px #9a9a9a;
   padding: 20px;
+}
+
+.titlewriting{
+  height: auto;
+  background-color: #00fa9a;
+  padding: 5px;
+  /* text-align: center; */
+  border-radius: 10px;
+  width: auto;
 }
 .about{
   /* margin-left: 10px; */
@@ -50,13 +67,28 @@
   justify-content: space-around;
   padding: 10px;
 }
-.info h1{
+.title{
+  display: flex;
+  flex-direction: row;
+}
+.title h4{
+  margin-left: 20px;
+}
+.title div{
+  align-self: flex-end;
+
+}
+.about h1{
   /* text-align: center; */
+  background-color: #00fa9a;
+  padding: 5px
+
 }
 
 .place div{
   align-self: flex-end;
 }
+
 
 .place{
   /* background-color: red;
@@ -71,5 +103,7 @@
   /* align-self: center; */
 }
 .projek{
-  height: 200px;
+  height: auto;
+  /* background-color: yellow; */
+  margin-bottom: 30px;
 }
