@@ -13,6 +13,28 @@
   width: 290px;
   border-radius: 10px;
 }
+.pictureSpace{
+  width: 500px;
+  height: 500px;
+
+  margin: 0 auto;
+}
+
+.bigpic{
+  width: 500px;
+  height: 500px;
+}
+.webSpace {
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+
+}
+.webpic{
+  width: 800px;
+  height: 500px;
+}
+
 .projectpic{
   width: 200px;
   height: 150px;

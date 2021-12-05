@@ -1,6 +1,5 @@
 import './App.css';
 import Pic from './images/mert-cropped.jpg'
-import { Button } from 'semantic-ui-react'
 import CezsBir from './images/portfolio2.jpg'
 import CezsIki from './images/porfolioshot.jpg'
 import Artstoneone from './images/artstoneone.jpg'
@@ -16,9 +15,21 @@ import CezsUc from './images/anothercez.jpg'
 import Hoopstre from './images/hoopsuno.jpg'
 import Arttre from './images/arttre.jpg'
 import Tracktre from './images/tracktre.jpg'
+import React, {useState} from 'react';
+import { Button, Modal } from 'semantic-ui-react'
+
 function App() {
+  const [open, setOpen] = useState(false)
+  const [type, setType] = useState(null)
+  const [selectedPath, setSelectedPath] = useState(null)
   const toWeb = (web) =>{
     window.open(web, '_blank')
+}
+
+const selectPicture = (pic, type) => {
+  setType(type)
+  setOpen(true)
+  setSelectedPath(pic)
 }
   return (
     <div className="App">
@@ -67,7 +78,7 @@ function App() {
           <div className="projek">
             <div className="title">
               <div>
-                <h3 className="titlewriting">Instrumentalists app</h3>
+                <h3 className="titlewriting">Cezs</h3>
 
               </div>
 
@@ -83,9 +94,9 @@ function App() {
 
             <p>Social network for instrumentalists</p>
             <div className="images">
-              <img src={CezsBir} className="phonepic" alt='cezs1'/>
-              <img src={CezsIki} className="phonepic" alt='cez2'/>
-              <img src={CezsUc} className="phonepic" alt='cez3'/>
+              <img onClick={() => selectPicture(CezsBir, "native")} src={CezsBir} className="phonepic" alt='cezs1'/>
+              <img onClick={() => selectPicture(CezsIki, "native")}src={CezsIki} className="phonepic" alt='cez2'/>
+              <img onClick={() => selectPicture(CezsUc, "native")}src={CezsUc} className="phonepic" alt='cez3'/>
 
             </div>
 
@@ -101,9 +112,9 @@ function App() {
             </div>
             <p>Official website of marble and granite fabricator and installer.</p>
             <div className="images">
-              <img src={Artstoneone} className="projectpic" alt='art1'/>
-              <img src={Arttwo} className="projectpic" alt='art2'/>
-              <img src={Arttre} className="projectpic" alt='art3'/>
+              <img onClick={() => selectPicture(Artstoneone, "web")} src={Artstoneone} className="projectpic" alt='art1'/>
+              <img onClick={() => selectPicture(Arttwo, "web")} src={Arttwo} className="projectpic" alt='art2'/>
+              <img onClick={() => selectPicture(Arttre, "web")} src={Arttre} className="projectpic" alt='art3'/>
 
             </div>
           </div>
@@ -125,9 +136,9 @@ function App() {
             </div>
             <p>Project development framework.</p>
             <div className="images">
-              <img src={Trackerdos} className="projectpic" alt='trak1'/>
-              <img src={Tracktre} className="projectpic" alt='trak2'/>
-              <img src={Trackeruno} className="projectpic" alt='trak3'/>
+              <img onClick={() => selectPicture(Trackerdos, "web")} src={Trackerdos} className="projectpic" alt='trak1'/>
+              <img onClick={() => selectPicture(Tracktre, "web")}src={Tracktre} className="projectpic" alt='trak2'/>
+              <img onClick={() => selectPicture(Trackeruno, "web")}src={Trackeruno} className="projectpic" alt='trak3'/>
 
             </div>
 
@@ -153,9 +164,9 @@ function App() {
             <p>A platform to sample your sound and share with others.</p>
             <div className="images">
 
-              <img src={Bubleuno} className="projectpic" alt='bub1'/>
-              <img src={BubleTre} className="projectpic" alt='bub2'/>
-              <img src={Bubledos} className="projectpic" alt='bub3'/>
+              <img onClick={() => selectPicture(Bubleuno, "web")} src={Bubleuno} className="projectpic" alt='bub1'/>
+              <img onClick={() => selectPicture(BubleTre, "web")} src={BubleTre} className="projectpic" alt='bub2'/>
+              <img onClick={() => selectPicture(Bubledos, "web")} src={Bubledos} className="projectpic" alt='bub3'/>
 
             </div>
 
@@ -179,15 +190,38 @@ function App() {
             </div>
             <p>A platform to discover basketball courts and best competition</p>
             <div className="images">
-              <img src={Hoopstre} className="projectpic" alt='hop1'/>
-              <img src={Hoopsuno} className="projectpic" alt='hop2'/>
-              <img src={Hoopsdos} className="projectpic" alt='hop3'/>
+              <img src={Hoopstre} onClick={() => selectPicture(Hoopstre, "web")}className="projectpic" alt='hop1'/>
+              <img src={Hoopsuno} onClick={() => selectPicture(Hoopsuno, "web")}className="projectpic" alt='hop2'/>
+              <img src={Hoopsdos} onClick={() => selectPicture(Hoopsdos, "web")}className="projectpic" alt='hop3'/>
 
 
             </div>
 
 
           </div>
+          <Modal
+            basic
+            onClose={() => setOpen(false)}
+            onOpen={() => setOpen(true)}
+            open={open}
+            size='small'
+            
+            // trigger={<Button>Basic Modal</Button>}
+            >
+              <div className={type == 'web' ? "webSpace" :"pictureSpace"}>
+                <img src={selectedPath} className={type == 'web' ? "webpic" : "bigpic"} alt='hop3'/>
+              </div>
+            
+            
+            {/* <Modal.Actions>
+              <Button basic color='red' inverted onClick={() => setOpen(false)}>
+                <Icon name='remove' /> No
+              </Button>
+              <Button color='green' inverted onClick={() => setOpen(false)}>
+                <Icon name='checkmark' /> Yes
+              </Button>
+            </Modal.Actions> */}
+          </Modal>
         </div>
         <div className="section">
           <div className="title">
