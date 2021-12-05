@@ -18,7 +18,6 @@ import Tracktre from './images/tracktre.jpg'
 import React, {useState, useRef} from 'react';
 import { Button, Modal } from 'semantic-ui-react'
 import emailjs from 'emailjs-com'
-import{ init } from 'emailjs-com';
 
 function App() {
   const [open, setOpen] = useState(false)
@@ -109,7 +108,8 @@ const sendEmail = e => {
             </div>
             </div>
 
-            <p>Social network for instrumentalists</p>
+            <p>Social network designed for instrumentalists where users make up the music library with instrument videos, announce upcoming events, and interact with others.            
+            </p>
             <div className="images">
               <img onClick={() => selectPicture(CezsBir, "native")} src={CezsBir} className="phonepic" alt='cezs1'/>
               <img onClick={() => selectPicture(CezsIki, "native")}src={CezsIki} className="phonepic" alt='cez2'/>
@@ -151,7 +151,9 @@ const sendEmail = e => {
 
               </div>
             </div>
-            <p>Project development framework.</p>
+            <p>
+              Project development application that offers a backlog-oriented framework to manage and develop projects. 
+              Influenced by Agile project management, development through user experience provides an insight as to which features to prioritize.</p>
             <div className="images">
               <img onClick={() => selectPicture(Trackerdos, "web")} src={Trackerdos} className="projectpic" alt='trak1'/>
               <img onClick={() => selectPicture(Tracktre, "web")}src={Tracktre} className="projectpic" alt='trak2'/>
@@ -178,7 +180,11 @@ const sendEmail = e => {
 
               </div>
             </div>
-            <p>A platform to sample your sound and share with others.</p>
+            <p>
+              Social network built around a sampler. 
+              Created for users to get creative sampling, composing, and sharing their own sounds with other users. 
+              Developed in an Agile environment through daily standup meetings and weekly sprints, with the intention to work with audio files.
+            </p>
             <div className="images">
 
               <img onClick={() => selectPicture(Bubleuno, "web")} src={Bubleuno} className="projectpic" alt='bub1'/>
@@ -205,7 +211,11 @@ const sendEmail = e => {
 
               </div>
             </div>
-            <p>A platform to discover basketball courts and best competition</p>
+            <p>
+              Social network that pivots around the most beautiful sport in the world, basketball. 
+              Created for hoopers to explore new basketball courts, find the best competition, and to connect with other hoopers with respect to the game itself. 
+              Developed in an Agile environment through daily standup meetings and a weekly sprint, with the intention to utilize Google Maps to bring people together.
+            </p>
             <div className="images">
               <img src={Hoopstre} onClick={() => selectPicture(Hoopstre, "web")}className="projectpic" alt='hop1'/>
               <img src={Hoopsuno} onClick={() => selectPicture(Hoopsuno, "web")}className="projectpic" alt='hop2'/>
