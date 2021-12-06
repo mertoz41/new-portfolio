@@ -50,7 +50,7 @@ const sendEmail = e => {
   return (
     <div className="App">
       <div className="middle">
-        <div className="top">
+      <div className="top">
           <img src={Pic} className="picture" alt='mert'/>
           <div className="info">
             <div className="about">
@@ -86,6 +86,7 @@ const sendEmail = e => {
 
         </div>
         
+        
         <div className="section">
           <div className="title">
 
@@ -93,12 +94,12 @@ const sendEmail = e => {
           </div>
           <div className="projek">
             <div className="title">
-              <div>
+              <div className="appname">
                 <h3 className="titlewriting">Cezs</h3>
 
               </div>
 
-              <div className="title">
+              <div className="buttons">
                 <div className="button">
                 <h4 onClick={() => toWeb('https://youtu.be/X6erehzcO3g')}>watch demo</h4>
               </div>
@@ -108,7 +109,12 @@ const sendEmail = e => {
             </div>
             </div>
 
-            <p>Social network designed for instrumentalists where users make up the music library with instrument videos, announce upcoming events, and interact with others.            
+            <p>
+              Social network designed for instrumentalists.
+              
+
+
+
             </p>
             <div className="images">
               <img onClick={() => selectPicture(CezsBir, "native")} src={CezsBir} className="phonepic" alt='cezs1'/>
@@ -120,12 +126,15 @@ const sendEmail = e => {
           </div>
           <div className="projek">
           <div className="title">
-              <div>
+              <div className="appname">
               <h3 className="titlewriting">Artstone Marble and Granite</h3>
               </div>
+              <div className="buttons">
               <div className="button">
                 <h4 onClick={() => toWeb('http://theartstone.com')}>website</h4>
               </div>
+              </div>
+
             </div>
             <p>Official website of marble and granite fabricator and installer.</p>
             <div className="images">
@@ -137,10 +146,10 @@ const sendEmail = e => {
           </div>
           <div className="projek">
             <div className="title">
-              <div>
+              <div className="appname">
               <h3 className="titlewriting">Project Tracker app</h3>
               </div>
-              <div className="title">
+              <div className="buttons">
                 <div className="button">
                   <h4 onClick={() => toWeb('https://vimeo.com/483887327')}>watch demo</h4>
                 </div>
@@ -165,11 +174,11 @@ const sendEmail = e => {
           </div>
           <div className="projek">
           <div className="title">
-              <div>
+              <div className="appname">
               <h3 className="titlewriting">Beatbox Bubble app</h3>
               </div>
   
-              <div className="title">
+              <div className="buttons">
                 <div className="button">
                   <h4 onClick={() => toWeb("https://vimeo.com/452664970")}>watch demo</h4>
                 </div>
@@ -196,11 +205,11 @@ const sendEmail = e => {
           </div>
           <div className="projek">
           <div className="title">
-              <div>
+              <div className="appname">
               <h3 className="titlewriting">Hooper app</h3>
               </div>
           
-              <div className="title">
+              <div className="buttons">
                 <div className="button">
                   <h4 onClick={() => toWeb('https://vimeo.com/452664239')}>watch demo</h4>
                 </div>
@@ -232,24 +241,16 @@ const sendEmail = e => {
             onOpen={() => setOpen(true)}
             open={open}
             size='small'
-            
-            // trigger={<Button>Basic Modal</Button>}
             >
               <div className={type == 'web' ? "webSpace" :"pictureSpace"}>
                 <img src={selectedPath} className={type == 'web' ? "webpic" : "bigpic"} alt='hop3'/>
               </div>
             
             
-            {/* <Modal.Actions>
-              <Button basic color='red' inverted onClick={() => setOpen(false)}>
-                <Icon name='remove' /> No
-              </Button>
-              <Button color='green' inverted onClick={() => setOpen(false)}>
-                <Icon name='checkmark' /> Yes
-              </Button>
-            </Modal.Actions> */}
+            
           </Modal>
         </div>
+           
         <div className="section">
           <div className="title">
             <h2 className="titlewriting">story</h2>
@@ -258,7 +259,8 @@ const sendEmail = e => {
             Upon graduating from T.C. Williams High School in 2014 and Thiel College in 2018 with a bachelors degree in International Business studies, I signed with Sigortam Net ITU Basket to play professional basketball in Istanbul.
             While it was a dream come true to hoop professionally, I pursued my curiosity in computers for a stable career.
             In 2020, I attended the Flatiron School and learned full-stack web development with Ruby on Rails and React.
-            In coding I recognized and embraced the process from basketball, this time spending countless hours on Google researching rather than on the hardwood, and to tackle problems rather than for sport, which fuels me everyday. 
+            In coding I recognized and embraced the process from basketball, this time spending countless hours on Google rather than on the hardwood, and to tackle world problems rather than for sport, which fuels me everyday. 
+            I spend nowadays mostly working on projects
           </p>
         </div>
         <div className="section">
@@ -279,7 +281,7 @@ const sendEmail = e => {
         </form>
         </div>
 
-      </div>
+      </div> 
 
     </div>
   );
