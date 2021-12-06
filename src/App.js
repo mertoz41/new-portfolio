@@ -38,8 +38,6 @@ const selectPicture = (pic, type) => {
 
 const sendEmail = e => {
   e.preventDefault();
-  // console.log(e)
-
   emailjs.sendForm('service_kxdorjg', 'template_h3ab9xv', form.current, 'user_MChuPfMmdUh7yV5A7XgUn')
     .then((result) => {
         console.log(result.text);
@@ -113,20 +111,14 @@ const sendEmail = e => {
               <div className="button">
                 <h4 onClick={() => toWeb('http://cezsmusic.com')}>website</h4>
               </div>
+              <div className="button">
+                <h4 onClick={() => toWeb('https://github.com/mertoz41/native-front')}>code</h4>
+              </div>
             </div>
             </div>
 
             <p>
               Social network designed for instrumentalists where users make up the library with instrument videos, pinpoint upcoming events, and interact with others through music.
-              {/* While video content simplifies sharing music, it also delivers more authenticity out of musicians.
-              instrumentalists  */}
-
-              {/* Music library of instrument videos not only simplify sharing music, but allow to deliver more authenticity out of musicians.
-              that simplifies sharing music while delivering more authenticity. */}
-  
-
-
-
             </p>
             <div className="images">
               <img onClick={() => selectPicture(CezsBir, "native")} src={CezsBir} className="phonepic" alt='cezs1'/>
@@ -166,7 +158,7 @@ const sendEmail = e => {
                   <h4 onClick={() => toWeb('https://vimeo.com/483887327')}>watch demo</h4>
                 </div>
                 <div className="button">
-                  <h4 onClick={() => toWeb('https://vimeo.com/483887327')}>github</h4>
+                  <h4 onClick={() => toWeb('https://github.com/mertoz41/tracker-frontend')}>code</h4>
 
                 </div>
 
@@ -195,7 +187,7 @@ const sendEmail = e => {
                   <h4 onClick={() => toWeb("https://vimeo.com/452664970")}>watch demo</h4>
                 </div>
                 <div className="button">
-                  <h4 onClick={() => toWeb('https://vimeo.com/483887327')}>github</h4>
+                  <h4 onClick={() => toWeb('https://github.com/mertoz41/beatbox-bubble')}>code</h4>
 
                 </div>
 
@@ -226,7 +218,7 @@ const sendEmail = e => {
                   <h4 onClick={() => toWeb('https://vimeo.com/452664239')}>watch demo</h4>
                 </div>
                 <div className="button">
-                  <h4 onClick={() => toWeb('https://vimeo.com/483887327')}>github</h4>
+                  <h4 onClick={() => toWeb('https://github.com/mertoz41/hooper-front-end')}>code</h4>
 
                 </div>
 
