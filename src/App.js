@@ -18,6 +18,7 @@ import Tracktre from './images/tracktre.jpg'
 import React, {useState, useRef} from 'react';
 import { Button, Modal } from 'semantic-ui-react'
 import emailjs from 'emailjs-com'
+import { Helmet } from 'react-helmet'
 
 function App() {
   const [open, setOpen] = useState(false)
@@ -49,6 +50,12 @@ const sendEmail = e => {
 }
   return (
     <div className="App">
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>Mert Özkaynak</title>
+          <meta name="description" content="Nested component" />
+          <link rel='icon' type='image/png' href='favicon.ico' sizes="16x16" />
+        </Helmet>
       <div className="middle">
       <div className="top">
           <img src={Pic} className="picture" alt='mert'/>
@@ -110,8 +117,13 @@ const sendEmail = e => {
             </div>
 
             <p>
-              Social network designed for instrumentalists.
-              
+              Social network designed for instrumentalists where users make up the library with instrument videos, pinpoint upcoming events, and interact with others through music.
+              {/* While video content simplifies sharing music, it also delivers more authenticity out of musicians.
+              instrumentalists  */}
+
+              {/* Music library of instrument videos not only simplify sharing music, but allow to deliver more authenticity out of musicians.
+              that simplifies sharing music while delivering more authenticity. */}
+  
 
 
 
@@ -260,7 +272,6 @@ const sendEmail = e => {
             While it was a dream come true to hoop professionally, I pursued my curiosity in computers for a stable career.
             In 2020, I attended the Flatiron School and learned full-stack web development with Ruby on Rails and React.
             In coding I recognized and embraced the process from basketball, this time spending countless hours on Google rather than on the hardwood, and to tackle world problems rather than for sport, which fuels me everyday. 
-            I spend nowadays mostly working on projects
           </p>
         </div>
         <div className="section">
@@ -277,7 +288,7 @@ const sendEmail = e => {
             <div>
           <textarea name="message" placeholder="Your Message"/>
               </div>
-          <input type="submit" value="Send" />
+          <input type="submit" value="Send" className="inputsubmit"/>
         </form>
         </div>
 

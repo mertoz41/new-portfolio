@@ -58,6 +58,9 @@
   width: 800px;
   height: 500px;
 }
+.inputsubmit{
+  background-color: #00fa9a;
+}
 
 .projectpic{
   width: 200px;
@@ -196,6 +199,22 @@
   .buttons{
     flex-direction: column;
     align-self: flex-end;
+  }
+  .pictureSpace{
+    width: 400px;
+    height: 400px;
+  }
+  .bigpic{
+    width: 400px;
+    height: 400px;
+  }
+  .webSpace{
+    width: 400px;
+    height: 300px;
+  }
+  .webpic{
+    width: 400px;
+    height: 300px;
   }
   .about{
     flex-direction: column;
