@@ -81,6 +81,9 @@ const sendEmail = e => {
 
                   </div>
 
+        <div className="button" onClick={() => toWeb('https://github.com/mertoz41/new-portfolio')}>
+            <h4>portfolio code</h4>
+        </div>
                 </div>
 
               <div>
