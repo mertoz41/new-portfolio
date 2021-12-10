@@ -1,23 +1,37 @@
 .App {
-  background-color: #2e2e2e;
   height: auto;
   width: 100vw;
 }
 .middle{
   margin: 0 auto;
   padding: 20px;
-  height: auto;
+  height: 100vh;
   width: 60%;
+  overflow: scroll;
+  backdrop-filter: blur(2px);
+
+  /* background-color: red; */
+
 }
 .picture{
-  width: 290px;
-  border-radius: 10px;
+  width: 200px;
+  border-radius: 50%;
 }
 .pictureSpace{
   width: 500px;
   height: 500px;
 
   margin: 0 auto;
+}
+.middle::-webkit-scrollbar {
+  display: none;
+}
+.cloudvid{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 .contactform{
   /* background-color: red; */
@@ -65,31 +79,53 @@
 .projectpic{
   width: 200px;
   height: 150px;
-  box-shadow: 0px 0px 15px 2px #5e5e5e;
+  box-shadow: 0px 0px 15px 2px white;
 }
 .projectpic:hover{
   box-shadow: 0px 0px 0px 0px ;
 }
 .phonepic{
   width: 200px;
-  box-shadow: 0px 0px 15px 2px #5e5e5e;
+  box-shadow: 0px 0px 15px 1px white;
 }
 .phonepic:hover{
   box-shadow: 0px 0px 0px 0px ;
 }
+.user{
+  /* height: auto; */
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  align-self: center;
+  flex-direction: row;
+}
+.userTitle{
+  color: white;
+  text-align: center;
+}
 .top{
   display: flex;
-  flex-direction: row;
-  background-color: darkgray;
+  /* align-self: center; */
+  justify-content: center;
   border-radius: 20px;
-  box-shadow: 0px 0px 30px 2px #9a9a9a;
   padding: 20px;
 }
+.top div{
+  background-color: rgba(255, 255, 255, 0.2);
+  /* justify-content: center; */
+  /* align-self: center; */
+}
+.info h3{
+  color: white;
+}
 .section{
-  background-color: darkgray;
+  background-color: rgba(255, 255, 255, 0.2);
+  /* box-shadow:  0px 0px 40px 40px #DBA632; */
+
+  /* background-color: darkgray; */
   margin-top: 30px;
   border-radius: 20px;
-  box-shadow: 0px 0px 30px 2px #9a9a9a;
+  /* box-shadow: 0px 0px 30px 2px black; */
   padding: 20px;
 }
 
@@ -103,11 +139,12 @@
   text-align: center;
 }
 .about{
-  width: 100%;
+  /* width: 100%; */
+  /* background-color: red; */
   display: flex;
   flex-direction: row;
   justify-content: center;
-  justify-content: space-between;
+  /* justify-content: space-around; */
 }
 .info{
   margin: 0 auto;
@@ -147,12 +184,16 @@
 }
 .about h1{
   /* text-align: center; */
-  background-color: #00fa9a;
+  /* background-color: #00fa9a; */
+  color: white;
   padding: 5px
 }
 
 .place div{
   align-self: flex-end;
+}
+.button{
+  align-self: center;
 }
 .button h4{
   background-color: #00fa9a;
@@ -170,7 +211,7 @@
 .place{
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 .images{

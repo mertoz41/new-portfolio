@@ -19,6 +19,7 @@ import React, {useState, useRef} from 'react';
 import { Button, Modal } from 'semantic-ui-react'
 import emailjs from 'emailjs-com'
 import { Helmet } from 'react-helmet'
+import Clouds from './images/clouds.mp4'
 
 function App() {
   const [open, setOpen] = useState(false)
@@ -54,45 +55,50 @@ const sendEmail = e => {
           <meta name="description" content="Nested component" />
           <link rel='icon' type='image/png' href='favicon.ico' sizes="16x16" />
         </Helmet>
+        <video
+        autoPlay
+        loop
+        muted
+        className='cloudvid'>
+          <source src={Clouds} type="video/mp4"/>
+        </video>
       <div className="middle">
-      <div className="top">
+<div className="top">
+        {/* <div className='user'> */}
+          <div>
+            <h1 className='userTitle'> Mert Özkaynak </h1>        
           <img src={Pic} className="picture" alt='mert'/>
-          <div className="info">
-            <div className="about">
-              <div>
-                <h1> Mert Özkaynak </h1>
-                
-              </div>
-              <div>
+            <h3 className='userTitle'>Full-Stack Web Developer</h3>
+
+          </div>
+          
+          {/* <div>
                   <Button circular icon="github" onClick={() => toWeb('https://github.com/mertoz41')} />
                   <Button circular color="linkedin" icon="linkedin" onClick={() => toWeb('https://www.linkedin.com/in/mert-ozkaynak')}/>
 
-            </div>
-              
+                <div className="button" onClick={() => toWeb('https://github.com/mertoz41/new-portfolio')}>
+                <h4>portfolio code</h4>
+              </div>
 
-            </div>
-            <div className="place">
-                  <div>
-                  <h3>Full-Stack App Developer</h3>
+          </div> */}
+          
+        {/* </div> */}
+          {/* <div className="info"> */}
+            {/* <div className="place">
+                  
+                  
 
-                  </div>
-                  <div>
-                  <h3>Alexandria, VA</h3>
+        
+                </div> */}
 
-                  </div>
-
-        <div className="button" onClick={() => toWeb('https://github.com/mertoz41/new-portfolio')}>
-            <h4>portfolio code</h4>
-        </div>
-                </div>
-
-              <div>
+              {/* <div>
           <h2>technical skills</h2>
             <p>JavaScript, React, Redux,  Node.js, Express, MongoDB, React Native, React Navigation, Ruby, Ruby on Rails, SQL, PostgreSQL, HTML, CSS</p>
-        </div>
-          </div>
+        </div> */}
+          {/* </div> */}
 
         </div>
+      
         
         
         <div className="section">
