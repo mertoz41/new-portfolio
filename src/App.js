@@ -22,7 +22,7 @@ import { Helmet } from 'react-helmet'
 import Landinbir from './images/landinbir.jpg'
 import Landiniki from './images/landiniki.jpg'
 import Landinuc from './images/landinuc.jpg'
-import Clouds from './images/shortclouds.gif'
+import Clouds from './images/shortest.gif'
 function App() {
   const [open, setOpen] = useState(false)
   const [type, setType] = useState(null)
