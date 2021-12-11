@@ -128,7 +128,8 @@ const sendEmail = e => {
             </div>
 
             <p>
-              Social network designed for instrumentalists where users make up the library with instrument videos, pinpoint upcoming events, and interact with others through music.
+              Social network wrapped around a library of your favorite songs, played by instrumentalists. Designed for instrumentalists, Cezs provides an exclusive network where users express themselves through music, discover others with similar taste, and pinpoint upcoming events. 
+              {/* designed for instrumentalists where users make up the library with instrument videos, pinpoint upcoming events, and interact with others through music. */}
             </p>
             <div className="images">
               <img onClick={() => selectPicture(CezsBir, "native")} src={CezsBir} className="phonepic" alt='cezs1'/>
@@ -159,15 +160,18 @@ const sendEmail = e => {
             </div>
 
             <p>
-              Social network designed for instrumentalists where users make up the library with instrument videos, pinpoint upcoming events, and interact with others through music.
+              Landing page for the mobile app.
             </p>
             <div className="images">
-              <img onClick={() => selectPicture(Landinbir, "native")} src={Landinbir} className="phonepic" alt='cezs1'/>
-              <img onClick={() => selectPicture(Landiniki, "native")}src={Landiniki} className="phonepic" alt='cez2'/>
-              <img onClick={() => selectPicture(Landinuc, "native")}src={Landinuc} className="phonepic" alt='cez3'/>
+              <img onClick={() => selectPicture(Landinbir, "native")} src={Landinbir} className="projectpic" alt='cezs1'/>
+              <img onClick={() => selectPicture(Landiniki, "native")}src={Landiniki} className="projectpic" alt='cez2'/>
+              <img onClick={() => selectPicture(Landinuc, "native")}src={Landinuc} className="projectpic" alt='cez3'/>
 
             </div>
+            <div className='stackSection'>
+
             <p><span className="coloredFont">frontend</span> React, EmailJs, React Router, React Page Scroller</p>
+            </div>
           </div>
           <div className="projek">
           <div className="titleSection">
