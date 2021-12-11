@@ -13,9 +13,13 @@
   /* background-color: red; */
 
 }
+.App p{
+  color: white;
+}
 .picture{
   width: 200px;
   border-radius: 50%;
+  align-self: center;
 }
 .pictureSpace{
   width: 500px;
@@ -79,25 +83,25 @@
 .projectpic{
   width: 200px;
   height: 150px;
-  box-shadow: 0px 0px 15px 2px white;
+  box-shadow: 0px 0px 0px 0px ;
 }
 .projectpic:hover{
-  box-shadow: 0px 0px 0px 0px ;
+  box-shadow: 0px 0px 30px 2px #00fa9a;
 }
 .phonepic{
   width: 200px;
-  box-shadow: 0px 0px 15px 1px white;
+  box-shadow: 0px 0px 10px 1px white;
 }
 .phonepic:hover{
   box-shadow: 0px 0px 0px 0px ;
 }
-.user{
+.job{
   /* height: auto; */
   display: flex;
   justify-content: space-between;
   width: auto;
   align-self: center;
-  flex-direction: row;
+  flex-direction: column;
 }
 .userTitle{
   color: white;
@@ -105,27 +109,25 @@
 }
 .top{
   display: flex;
+  background-color: rgba(255, 255, 255, 0.5);
+
   /* align-self: center; */
-  justify-content: center;
+  flex-direction: row;
+  /* justify-content: spac; */
   border-radius: 20px;
   padding: 20px;
 }
-.top div{
-  background-color: rgba(255, 255, 255, 0.2);
-  /* justify-content: center; */
-  /* align-self: center; */
-}
+
 .info h3{
   color: white;
 }
 .section{
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(17, 17, 17, 0.3);
   /* box-shadow:  0px 0px 40px 40px #DBA632; */
 
   /* background-color: darkgray; */
   margin-top: 30px;
   border-radius: 20px;
-  /* box-shadow: 0px 0px 30px 2px black; */
   padding: 20px;
 }
 
@@ -138,13 +140,13 @@
 
   text-align: center;
 }
-.about{
+.jobTitle{
   /* width: 100%; */
   /* background-color: red; */
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* justify-content: space-around; */
+  justify-content: space-between;
 }
 .info{
   margin: 0 auto;

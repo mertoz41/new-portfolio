@@ -63,45 +63,55 @@ const sendEmail = e => {
           <source src={Clouds} type="video/mp4"/>
         </video>
       <div className="middle">
-<div className="top">
-        {/* <div className='user'> */}
+    <h1 className='userTitle'> Mert Özkaynak </h1>    
+  <div className="top">
+    <div>
+      <img src={Pic} className="picture" alt='mert'/>
+
+    </div>
+    <div className='job'>
+      <div className='jobTitle'>
+        <h3>Full-Stack Web Developer</h3>
+        <div className="button" onClick={() => toWeb('https://github.com/mertoz41/new-portfolio')}>
+                  <h4>portfolio code</h4>
+        </div>
+        <div>
+          <Button circular icon="github" onClick={() => toWeb('https://github.com/mertoz41')} />
+          <Button circular color="linkedin" icon="linkedin" onClick={() => toWeb('https://www.linkedin.com/in/mert-ozkaynak')}/>
+
+        </div>
+      </div>
+      <div>
+          <h2>technical skills</h2>
+            <p>JavaScript, React, Redux,  Node.js, Express, MongoDB, React Native, React Navigation, Ruby, Ruby on Rails, SQL, PostgreSQL, HTML, CSS</p>
+        </div>
+    </div>
+    {/* <div className='user'>
+    
+
+    </div> */}
+            {/*   
+        <div className='user'>
           <div>
-            <h1 className='userTitle'> Mert Özkaynak </h1>        
-          <img src={Pic} className="picture" alt='mert'/>
-            <h3 className='userTitle'>Full-Stack Web Developer</h3>
 
           </div>
           
-          {/* <div>
-                  <Button circular icon="github" onClick={() => toWeb('https://github.com/mertoz41')} />
-                  <Button circular color="linkedin" icon="linkedin" onClick={() => toWeb('https://www.linkedin.com/in/mert-ozkaynak')}/>
+          <div>
 
-                <div className="button" onClick={() => toWeb('https://github.com/mertoz41/new-portfolio')}>
-                <h4>portfolio code</h4>
-              </div>
+                
 
-          </div> */}
+          </div>
           
-        {/* </div> */}
-          {/* <div className="info"> */}
-            {/* <div className="place">
-                  
-                  
 
-        
-                </div> */}
 
-              {/* <div>
-          <h2>technical skills</h2>
-            <p>JavaScript, React, Redux,  Node.js, Express, MongoDB, React Native, React Navigation, Ruby, Ruby on Rails, SQL, PostgreSQL, HTML, CSS</p>
-        </div> */}
-          {/* </div> */}
+              
+          </div> */}
 
-        </div>
+</div>
       
         
         
-        <div className="section">
+        {/* <div className="section">
           <div className="title">
 
           <h2 className="titlewriting">projects</h2>
@@ -262,9 +272,9 @@ const sendEmail = e => {
             
             
           </Modal>
-        </div>
+        </div> */}
            
-        <div className="section">
+        {/* <div className="section">
           <div className="title">
             <h2 className="titlewriting">story</h2>
           </div>
@@ -274,8 +284,8 @@ const sendEmail = e => {
             In 2020, I attended the Flatiron School and learned full-stack web development with Ruby on Rails and React.
             In coding I recognized and embraced the process from basketball, this time spending countless hours on Google rather than on the hardwood, and to tackle world problems rather than for sport, which fuels me everyday. 
           </p>
-        </div>
-        <div className="section">
+        </div> */}
+        {/* <div className="section">
         <div className="title">
           <h2 className="titlewriting">contact me</h2>
         </div>
@@ -291,7 +301,7 @@ const sendEmail = e => {
               </div>
           <input type="submit" value="Send" className="inputsubmit"/>
         </form>
-        </div>
+        </div> */}
 
       </div> 
 
