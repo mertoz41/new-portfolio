@@ -22,7 +22,7 @@ import { Helmet } from 'react-helmet'
 import Landinbir from './images/landinbir.jpg'
 import Landiniki from './images/landiniki.jpg'
 import Landinuc from './images/landinuc.jpg'
-
+import Clouds from './images/shortclouds.gif'
 function App() {
   const [open, setOpen] = useState(false)
   const [type, setType] = useState(null)
@@ -58,19 +58,8 @@ const sendEmail = e => {
           <link rel='icon' type='image/png' href='favicon.ico' sizes="16x16" />
         </Helmet>
 
-      
-        <video
-        autoPlay
-        playsInline
-        loop
-        muted
-        height='100%'
-        width="100%"
-        className='cloudvid'
-        >
-          <source src='/Videos/clouds.mp4' type="video/mp4"/>
-          Your Browser does not support HTML5 video.
-        </video>
+        <img src={Clouds} className='cloudvid'  height='100%'width="100%"/>
+        
 
         
        
