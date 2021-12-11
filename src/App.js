@@ -19,7 +19,6 @@ import React, {useState, useRef} from 'react';
 import { Button, Modal } from 'semantic-ui-react'
 import emailjs from 'emailjs-com'
 import { Helmet } from 'react-helmet'
-import Clouds from './videos/clouds.mp4'
 import Landinbir from './images/landinbir.jpg'
 import Landiniki from './images/landiniki.jpg'
 import Landinuc from './images/landinuc.jpg'
@@ -69,7 +68,7 @@ const sendEmail = e => {
         width="100%"
         className='cloudvid'
         >
-          <source src={Clouds} type="video/mp4"/>
+          <source src='/Videos/clouds.mp4' type="video/mp4"/>
           Your Browser does not support HTML5 video.
         </video>
 
