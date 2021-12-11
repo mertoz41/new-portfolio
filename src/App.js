@@ -65,6 +65,8 @@ const sendEmail = e => {
         playsInline
         loop
         muted
+        height='100%'
+        width="100%"
         className='cloudvid'
         >
           <source src={Clouds} type="video/mp4"/>
