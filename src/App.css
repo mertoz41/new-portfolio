@@ -1,7 +1,6 @@
 .App {
   height: auto;
   width: 100vw;
-
 }
 .middle{
   margin: 0 auto;
@@ -9,11 +8,11 @@
   height: 100vh;
   width: 60%;
   overflow: scroll;
-  
-
+  /* z-index: -1; */
   /* background-color: red; */
 
 }
+
 .App p{
   color: white;
   font-size: large;
@@ -33,12 +32,13 @@
 .middle::-webkit-scrollbar {
   display: none;
 }
+
 .cloudvid{
   position: absolute;
   height: 100%;
   width: 100%;
-  object-fit: cover;
   z-index: -1;
+  object-fit: cover;
 }
 .contactform{
   /* background-color: red; */

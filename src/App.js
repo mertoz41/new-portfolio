@@ -58,14 +58,21 @@ const sendEmail = e => {
           <meta name="description" content="Nested component" />
           <link rel='icon' type='image/png' href='favicon.ico' sizes="16x16" />
         </Helmet>
+      <div className='experiment'>
+
+      
         <video
-        autoPlay
+        autoPlay={true}
         playsInline
         loop
         muted
-        className='cloudvid'>
-          <source src={Clouds} type="video/mp4"/>
+        src={Clouds}
+        className='cloudvid'
+        type="video/mp4"
+        >
         </video>
+
+        
        
       <div className="middle">
   <div className="top">
@@ -342,6 +349,7 @@ const sendEmail = e => {
         </div>
 
       </div> 
+      </div>
 
     </div>
   );
