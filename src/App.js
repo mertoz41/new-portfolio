@@ -58,18 +58,17 @@ const sendEmail = e => {
           <meta name="description" content="Nested component" />
           <link rel='icon' type='image/png' href='favicon.ico' sizes="16x16" />
         </Helmet>
-      <div className='experiment'>
 
       
         <video
-        autoPlay={true}
+        autoPlay
         playsInline
         loop
         muted
-        src={Clouds}
         className='cloudvid'
-        type="video/mp4"
         >
+          <source src={Clouds} type="video/mp4"/>
+          Your Browser does not support HTML5 video.
         </video>
 
         
@@ -349,7 +348,6 @@ const sendEmail = e => {
         </div>
 
       </div> 
-      </div>
 
     </div>
   );
