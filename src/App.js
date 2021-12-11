@@ -62,70 +62,55 @@ const sendEmail = e => {
         className='cloudvid'>
           <source src={Clouds} type="video/mp4"/>
         </video>
+       
       <div className="middle">
-    <h1 className='userTitle'> Mert Özkaynak </h1>    
   <div className="top">
-    <div>
+    <div className='topSection'>
       <img src={Pic} className="picture" alt='mert'/>
 
     </div>
-    <div className='job'>
-      <div className='jobTitle'>
-        <h3>Full-Stack Web Developer</h3>
-        <div className="button" onClick={() => toWeb('https://github.com/mertoz41/new-portfolio')}>
-                  <h4>portfolio code</h4>
-        </div>
-        <div>
-          <Button circular icon="github" onClick={() => toWeb('https://github.com/mertoz41')} />
-          <Button circular color="linkedin" icon="linkedin" onClick={() => toWeb('https://www.linkedin.com/in/mert-ozkaynak')}/>
+    <div>
+      <h1 className='userTitle'> Mert Özkaynak </h1>    
+      <h3 className='userTitle'>Full-Stack Web Developer</h3>
 
-        </div>
-      </div>
-      <div>
-          <h2>technical skills</h2>
-            <p>JavaScript, React, Redux,  Node.js, Express, MongoDB, React Native, React Navigation, Ruby, Ruby on Rails, SQL, PostgreSQL, HTML, CSS</p>
-        </div>
     </div>
-    {/* <div className='user'>
+    <div className='bottomSection'>
+    <Button circular color="linkedin" icon="linkedin" onClick={() => toWeb('https://www.linkedin.com/in/mert-ozkaynak')}/>
+    <Button circular icon="github" onClick={() => toWeb('https://github.com/mertoz41')} />        
+
+    </div>
+    <div>
     
 
-    </div> */}
-            {/*   
-        <div className='user'>
-          <div>
+    </div>
+            
 
-          </div>
-          
-          <div>
-
-                
-
-          </div>
-          
-
-
-              
-          </div> */}
+</div>
+          <h2 className='userTitle'>technical skills</h2>
+<div className='section'>
+        
+        
+            <p>JavaScript, React, React Native, Gatsby, Redux, Ruby, Ruby on Rails, SQL, PostgreSQL, HTML, CSS</p>
 
 </div>
       
+        {/* <div className="button" onClick={() => toWeb('https://github.com/mertoz41/new-portfolio')}>
+                  <h4>portfolio code</h4>
+        </div> */}
         
+          <h2 className="userTitle">projects</h2>
+        <div>
         
-        {/* <div className="section">
-          <div className="title">
-
-          <h2 className="titlewriting">projects</h2>
-          </div>
           <div className="projek">
-            <div className="title">
+            <div className="titleSection">
               <div className="appname">
-                <h3 className="titlewriting">Cezs</h3>
+                <h3 className="titlewriting">Cezs Mobile App</h3>
 
               </div>
 
               <div className="buttons">
                 <div className="button">
-                <h4 onClick={() => toWeb('https://youtu.be/X6erehzcO3g')}>watch demo</h4>
+                <h4 onClick={() => toWeb('https://youtu.be/X6erehzcO3g')}>demo</h4>
               </div>
               <div className="button">
                 <h4 onClick={() => toWeb('http://cezsmusic.com')}>website</h4>
@@ -145,10 +130,45 @@ const sendEmail = e => {
               <img onClick={() => selectPicture(CezsUc, "native")}src={CezsUc} className="phonepic" alt='cez3'/>
 
             </div>
+            <p>PostgreSQL, Ruby on Rails, React Native, Expo</p>
+            <p>Spotify, Here Geolocation, JWT </p>
+
+
 
           </div>
           <div className="projek">
-          <div className="title">
+            <div className="titleSection">
+              <div className="appname">
+                <h3 className="titlewriting">Cezs Landing Page</h3>
+
+              </div>
+
+              <div className="buttons">
+                <div className="button">
+                <h4 onClick={() => toWeb('https://youtu.be/X6erehzcO3g')}>demo</h4>
+              </div>
+              <div className="button">
+                <h4 onClick={() => toWeb('http://cezsmusic.com')}>website</h4>
+              </div>
+              <div className="button">
+                <h4 onClick={() => toWeb('https://github.com/mertoz41/native-front')}>code</h4>
+              </div>
+            </div>
+            </div>
+
+            <p>
+              Social network designed for instrumentalists where users make up the library with instrument videos, pinpoint upcoming events, and interact with others through music.
+            </p>
+            <div className="images">
+              {/* <img onClick={() => selectPicture(CezsBir, "native")} src={CezsBir} className="phonepic" alt='cezs1'/>
+              <img onClick={() => selectPicture(CezsIki, "native")}src={CezsIki} className="phonepic" alt='cez2'/>
+              <img onClick={() => selectPicture(CezsUc, "native")}src={CezsUc} className="phonepic" alt='cez3'/> */}
+
+            </div>
+
+          </div>
+          <div className="projek">
+          <div className="titleSection">
               <div className="appname">
               <h3 className="titlewriting">Artstone Marble and Granite</h3>
               </div>
@@ -168,13 +188,13 @@ const sendEmail = e => {
             </div>
           </div>
           <div className="projek">
-            <div className="title">
+            <div className="titleSection">
               <div className="appname">
               <h3 className="titlewriting">Project Tracker app</h3>
               </div>
               <div className="buttons">
                 <div className="button">
-                  <h4 onClick={() => toWeb('https://vimeo.com/483887327')}>watch demo</h4>
+                  <h4 onClick={() => toWeb('https://vimeo.com/483887327')}>demo</h4>
                 </div>
                 <div className="button">
                   <h4 onClick={() => toWeb('https://github.com/mertoz41/tracker-frontend')}>code</h4>
@@ -196,14 +216,14 @@ const sendEmail = e => {
 
           </div>
           <div className="projek">
-          <div className="title">
+          <div className="titleSection">
               <div className="appname">
               <h3 className="titlewriting">Beatbox Bubble app</h3>
               </div>
   
               <div className="buttons">
                 <div className="button">
-                  <h4 onClick={() => toWeb("https://vimeo.com/452664970")}>watch demo</h4>
+                  <h4 onClick={() => toWeb("https://vimeo.com/452664970")}>demo</h4>
                 </div>
                 <div className="button">
                   <h4 onClick={() => toWeb('https://github.com/mertoz41/beatbox-bubble')}>code</h4>
@@ -227,14 +247,14 @@ const sendEmail = e => {
 
           </div>
           <div className="projek">
-          <div className="title">
+          <div className="titleSection">
               <div className="appname">
               <h3 className="titlewriting">Hooper app</h3>
               </div>
           
               <div className="buttons">
                 <div className="button">
-                  <h4 onClick={() => toWeb('https://vimeo.com/452664239')}>watch demo</h4>
+                  <h4 onClick={() => toWeb('https://vimeo.com/452664239')}>demo</h4>
                 </div>
                 <div className="button">
                   <h4 onClick={() => toWeb('https://github.com/mertoz41/hooper-front-end')}>code</h4>
@@ -272,23 +292,19 @@ const sendEmail = e => {
             
             
           </Modal>
-        </div> */}
+        </div>
            
-        {/* <div className="section">
-          <div className="title">
-            <h2 className="titlewriting">story</h2>
-          </div>
+            <h2 className="userTitle">story</h2>
+        <div className="section">
           <p>Born and raised in Izmir, Turkey, I moved to the United States to further education as a student-athlete in 2010.
             Upon graduating from T.C. Williams High School in 2014 and Thiel College in 2018 with a bachelors degree in International Business studies, I signed with Sigortam Net ITU Basket to play professional basketball in Istanbul.
             While it was a dream come true to hoop professionally, I pursued my curiosity in computers for a stable career.
             In 2020, I attended the Flatiron School and learned full-stack web development with Ruby on Rails and React.
             In coding I recognized and embraced the process from basketball, this time spending countless hours on Google rather than on the hardwood, and to tackle world problems rather than for sport, which fuels me everyday. 
           </p>
-        </div> */}
-        {/* <div className="section">
-        <div className="title">
-          <h2 className="titlewriting">contact me</h2>
         </div>
+          <h2 className="userTitle">contact me</h2>
+        <div className="section">
         <form ref={form} onSubmit={e => sendEmail(e)} className="contactform">
           <div>
             <input type="text" name="user_name" placeholder="Your Name"/>
@@ -301,7 +317,7 @@ const sendEmail = e => {
               </div>
           <input type="submit" value="Send" className="inputsubmit"/>
         </form>
-        </div> */}
+        </div>
 
       </div> 
 

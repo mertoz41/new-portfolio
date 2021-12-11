@@ -1,6 +1,7 @@
 .App {
   height: auto;
   width: 100vw;
+
 }
 .middle{
   margin: 0 auto;
@@ -8,17 +9,19 @@
   height: 100vh;
   width: 60%;
   overflow: scroll;
-  backdrop-filter: blur(2px);
+  
 
   /* background-color: red; */
 
 }
 .App p{
   color: white;
+  font-size: large;
+  font-weight: 600;
 }
 .picture{
-  width: 200px;
-  border-radius: 50%;
+  width: 150px;
+  border-radius: 10px;
   align-self: center;
 }
 .pictureSpace{
@@ -44,8 +47,10 @@
 .contactform input{
   background-color: transparent;
   margin-top: 30px;
+  font-size: large;
+  color: #00fa9a;
   border-width: 0px;
-  border-bottom: 1px solid #2e2e2e;
+  border-bottom: 2px solid white;
 }
 .contactform input::placeholder{
   color: #2e2e2e
@@ -54,10 +59,12 @@
   color: #2e2e2e
 }
 .contactform textarea{
+  font-size: large;
+  color: #00fa9a;
   background-color: transparent;
   margin-top: 30px;
   border-width: 0px;
-  border-bottom: 1px solid #2e2e2e;
+  border-bottom: 1px solid white;
 }
 
 
@@ -75,6 +82,7 @@
 .webpic{
   width: 800px;
   height: 500px;
+
 }
 .inputsubmit{
   background-color: #00fa9a;
@@ -83,25 +91,28 @@
 .projectpic{
   width: 200px;
   height: 150px;
-  box-shadow: 0px 0px 0px 0px ;
+  box-shadow: 0px 0px 10px 2px #2e2e2e;
+
 }
 .projectpic:hover{
-  box-shadow: 0px 0px 30px 2px #00fa9a;
+  box-shadow: 0px 0px 0px 0px transparent;
 }
 .phonepic{
   width: 200px;
-  box-shadow: 0px 0px 10px 1px white;
+  box-shadow: 0px 0px 10px 1px #2e2e2e;
 }
 .phonepic:hover{
-  box-shadow: 0px 0px 0px 0px ;
+  box-shadow: 0px 0px 0px 0px transparent;
 }
 .job{
   /* height: auto; */
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-around; */
   width: auto;
-  align-self: center;
+  /* align-self: center; */
   flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .userTitle{
   color: white;
@@ -109,13 +120,26 @@
 }
 .top{
   display: flex;
-  background-color: rgba(255, 255, 255, 0.5);
+  /* align-self: center; */
+  /* width: 50%; */
+  /* background-color: rgba(0, 0, 0, 0.3); */
 
   /* align-self: center; */
-  flex-direction: row;
-  /* justify-content: spac; */
+  flex-direction: column;
+  justify-content: center;
   border-radius: 20px;
   padding: 20px;
+}
+
+.bottomSection{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.topSection{
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
 }
 
 .info h3{
@@ -123,21 +147,18 @@
 }
 .section{
   background-color: rgba(17, 17, 17, 0.3);
-  /* box-shadow:  0px 0px 40px 40px #DBA632; */
 
-  /* background-color: darkgray; */
-  margin-top: 30px;
   border-radius: 20px;
   padding: 20px;
 }
 
 
 .titlewriting{
-  
+  color: white;
   margin: 0 auto;
   margin-bottom: 5px;
   border-bottom: 2px solid #00fa9a;
-
+  font-size: x-large;
   text-align: center;
 }
 .jobTitle{
@@ -164,23 +185,20 @@
   text-decoration: underline;
   text-decoration-color: #00fa9a;
 }
-.title{
+.titleSection{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   /* background-color: red; */
 }
-.title h4{
+.titleSection h4{
   margin-left: 20px;
 }
-.title h3{
+.titleSection h3{
   border-width: 2px;
   border-color: #00fa9a;
 }
-.title div{
-  /* align-self: flex-end; */
 
-}
 .appname{
   align-self: flex-start;
 }
@@ -205,9 +223,9 @@
   background-color: transparent;
   /* color: #00fa9a */
 }
-.section p{
+/* .section p{
   font-size: medium;
-}
+} */
 
 
 .place{
@@ -225,9 +243,12 @@
 .projek{
   height: auto;
   width: 100%;
-  padding-bottom: 30px;
+  border-radius: 20px;
+  /* padding-bottom: 30px; */
   margin-bottom: 20px;
-  border-bottom: 2px solid #2e2e2e;
+  background-color: rgba(17, 17, 17, 0.3);
+  padding: 20px;
+  /* border-bottom: 2px solid #2e2e2e; */
   /* border-bottom-color: red; */
 }
 
