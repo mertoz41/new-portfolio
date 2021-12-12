@@ -46,7 +46,7 @@
   background-color: transparent;
   margin-top: 30px;
   font-size: large;
-  color: #00fa9a;
+  color: white;
   border-width: 0px;
   border-bottom: 2px solid white;
 }
@@ -58,7 +58,7 @@
 }
 .contactform textarea{
   font-size: large;
-  color: #00fa9a;
+  color: white;
   background-color: transparent;
   margin-top: 30px;
   border-width: 0px;
@@ -83,7 +83,12 @@
 
 }
 .coloredFont{
-  color: #00fa9a;
+  color: black;
+  border-bottom: 2px solid whitesmoke;
+
+  /* background-color: whitesmoke;
+  padding: 5px;
+  border-radius: 20px; */
   /* font-weight: bold; */
 }
 .inputsubmit{
@@ -162,7 +167,7 @@
   color: white;
   margin: 0 auto;
   margin-bottom: 5px;
-  border-bottom: 2px solid #00fa9a;
+  border-bottom: 2px solid darkgray;
   font-size: x-large;
   text-align: center;
 }
@@ -201,7 +206,7 @@
 }
 .titleSection h3{
   border-width: 2px;
-  border-color: #00fa9a;
+  border-color: darkgray;
 }
 
 .appname{
@@ -221,11 +226,12 @@
   align-self: center;
 }
 .button h4{
-  background-color: #00fa9a;
-  padding: 3px;
+  background-color: whitesmoke;
+  padding: 6px;
+  border-radius: 20px;
 }
 .button h4:hover{
-  background-color: transparent;
+  background-color: darkgray;
   /* color: #00fa9a */
 }
 /* .section p{
