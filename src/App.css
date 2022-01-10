@@ -1,6 +1,11 @@
 .App {
-  height: auto;
   width: 100vw;
+  height: 100vh;
+  background-color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 .middle{
   margin: 0 auto;
@@ -63,6 +68,25 @@
   margin-top: 30px;
   border-width: 0px;
   border-bottom: 1px solid white;
+}
+.proje{
+  background-color: darkgray;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding: 10px;
+  border-radius: 10px;
+  flex: 1;
+  height: 100px;
+  margin: 10px;
+}
+.proje:hover{
+  background-color: rgb(212, 212, 212);
+}
+
+.arow{
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -133,6 +157,59 @@
   text-align: center;
 
 }
+.welcomeContainer{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-self: center; */
+  /* height: auto; */
+  background-color: red;
+}
+.footerContainer{
+  position: absolute;
+  display: flex;
+  bottom: 0px;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  height: 60px;
+  padding-right: 10px;
+  background-color: #616161;
+}
+.headerContainer{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+  background-color: #616161;
+}
+.headerRight{
+  display: flex;
+}
+.headerButon{
+  margin-right: 10px;
+}
+.headerButon h2:hover{
+  color: #00fa9a;
+}
+.selectedTitle{
+  color: #00fa9a;
+}
+.headerLeft h3:hover{
+  color: #00fa9a;
+}
+
+
+.headerLeft{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+}
 .top{
   display: flex;
   flex-direction: column;
@@ -142,10 +219,14 @@
 }
 
 .bottomSection{
-  margin-top: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
+.bottomSection div{
+  align-self: center;
+
+}
+
 .topSection{
   display: flex;
   margin-bottom: 10px;
