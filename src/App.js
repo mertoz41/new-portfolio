@@ -5,9 +5,9 @@ import React, {useState, useRef} from 'react';
 import emailjs from 'emailjs-com'
 import { Helmet } from 'react-helmet'
 import Clouds from './images/shortest.gif'
-import Welcome from './pages/Welcome';
+import Home from './pages/Home';
 import Footer from './components/Footer';
-import Projects from './pages/Projects'
+import Projects from './components/Projects'
 import About from './pages/About';
 import Project from './pages/Project'
 import {
@@ -51,19 +51,18 @@ const sendEmail = e => {
           <meta name="description" content="Nested component" />
           <link rel='icon' type='image/png' href='favicon.ico' sizes="16x16" />
         </Helmet>
-        
-      <div>
+      <div className='middle'>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Welcome />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/project/:id" element={<Project />} />
         </Routes>
       </BrowserRouter>
 
-      </div>
       <Footer />
+      </div>
         {/* <img src={Clouds} className='cloudvid'  height='100%'width="100%"/> */}
         
         

@@ -41,6 +41,12 @@ const beatboxbubble = {
 const hooper = {
     name: 'Hooper',
     pictures: [Hoopsuno,Hoopsdos, Hoopstre]
+    // hooper app was a project I built in the fourth module of the Flatiron school bootcamp 
+    // my approach to this project was to work with maps so that I could use it for Cezs.
+    // While brainstorming on what I could use the maps for, 
+    // I recalled a struggle my friends and I had growing up, going to different courts around the city to play with different people
+    // to provide the map and allow interaction between users
+    // 
 }
 
 export {cezs, artstone, tracker, beatboxbubble, hooper}

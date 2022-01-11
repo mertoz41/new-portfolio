@@ -1,28 +1,31 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
-
+import Styles from './header.module.css'
 
 const Header = () => {
-    console.log(window.location.pathname)
     const navigate = useNavigate()
 
     return (
-        <div className='headerContainer'>
-            <div className='headerLeft' onClick={() => navigate('/')}>
+        <div className={Styles.container}>
+            <div className={Styles.sections}>
                 <div>
-                    <h3>Mert Özkaynak</h3>
+                    <h3 className={Styles.name}>Mert Özkaynak</h3>
                 </div>
                 <div>
-                    <h4>full stack web developer</h4>
+                    <h3 className={Styles.secondary}>web developer</h3>
                 </div>
             </div>
-            <div className='headerRight'>
-                <div className="headerButon" onClick={() => navigate('/about')}>
-                    <h2 className={window.location.pathname === '/about' && 'selectedTitle'}>about</h2>
+            <div className={Styles.sections}>
+                {window.location.pathname !== '/' && 
+                <div onClick={() => navigate('/')}>
+                    <h3 className={Styles.primary}>home</h3>
                 </div>
-                <div className="headerButon" onClick={() => navigate('/projects')}>
-                    <h2 className={window.location.pathname === '/projects' && 'selectedTitle'}>projects</h2>
+                }
+                {window.location.pathname !== '/about' &&
+                <div onClick={() => navigate('/about')}>
+                    <h3 className={Styles.primary}>about</h3>
                 </div>
+                }
             </div>
         </div>
     )

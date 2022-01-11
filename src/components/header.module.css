@@ -1,0 +1,35 @@
+.container{
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 40px;
+    /* border: 3px red solid; */
+    /* background-color: #616161; */
+}
+.sections{
+    display: flex;
+}
+.sections div{
+    margin-left: 10px;
+}
+.name{
+    color: white;
+}
+
+.primary{
+    color: white;
+    border-bottom: 2px solid #00fa9a;
+    margin-right: 10px;
+}
+.primary:hover{
+    border-bottom: 2px solid transparent;
+}
+.secondary{
+    color: rgb(116, 116, 116);
+    border-bottom: 2px solid transparent;
+
+}

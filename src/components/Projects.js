@@ -1,12 +1,13 @@
 import React, {useState} from 'react'
 import { Modal } from 'semantic-ui-react'
 import { useNavigate } from "react-router-dom";
-import Header from '../components/Header';
+import Header from './Header';
 import ArtstoneOne from '../images/artstoneone.jpg'
 import Cezs from '../images/portfolio2.jpg'
 import Tracker from '../images/trackeruno.jpg'
 import Buble from '../images/bubledos.jpg'
 import Hooper from '../images/hoopsuno.jpg'
+import Styles from './projects.module.css'
 const Projects = () => {  
     const [open, setOpen] = useState(false)
     const [type, setType] = useState(null)
@@ -18,51 +19,76 @@ const Projects = () => {
     
     const navigate = useNavigate() 
     return(
-        <div className='projects'>
-            <Header />
-          
-                <div className='proje' onClick={() => navigate('/project/cezs')}>
+        <div className={Styles.projects}>        
+          <p>Projects</p>
+          <div className={Styles.oneProject} >
+            <p onClick={() => navigate('/project/cezs')} className={Styles.title}>Cezs, <span className={Styles.secondary}>Coming soon</span></p>
+            <p>music platform for instrumentalists</p>
+          </div>
+          <div className={Styles.oneProject} >
+            <p onClick={() => navigate('/project/artstone')} className={Styles.title}>Artstone Marble & Granite, <span className={Styles.secondary}>Client project</span></p>
+            <p>Official website of marble and granite producer</p>
+
+          </div>
+          <div className={Styles.oneProject}>
+
+          <p onClick={() => navigate('/project/tracker')} className={Styles.title}>Project Tracker</p>
+          <p>Project development framework</p>
+          </div>
+          <div className={Styles.oneProject} >
+          <p onClick={() => navigate('/project/beatboxbubble')} className={Styles.title}>Beatbox Bubble</p>
+          <p>Music platform built around a sampler</p>
+
+          </div>
+          <div className={Styles.oneProject} >
+            <p onClick={() => navigate('/project/hooper')} className={Styles.title}>Hooper</p>
+            <p>music platform for instrumentalists</p>
+
+          </div>
+
+
+                {/* <div className={Styles.proje} onClick={() => }>
                   <div>
                     <h1>cezs 2022</h1>
                     <h3>music app designed for instrumentalists.</h3>
                   </div>
-                    <img className='picture' src={Cezs} alt='cezspic' />
-                </div>
-                <div className='proje' onClick={() => navigate('/project/artstone')}>
+                    <img className={Styles.picture} src={Cezs} alt='cezspic' />
+                </div> */}
+                {/* <div className={Styles.proje} onClick={() => navigate('/project/artstone')}>
                   <div>
                     <h1>Artstone Marble & Granite 2021</h1>
                     <h3>official website of a marble and granite distributor.</h3>
 
                   </div>
-                    <img className='picture' src={ArtstoneOne} alt='artstone' />
+                    <img className={Styles.picture} src={ArtstoneOne} alt='artstone' />
 
-                </div>
-                <div className='proje' onClick={() => navigate('/project/tracker')}>
+                </div> */}
+                {/* <div className={Styles.proje} onClick={() => navigate('/project/tracker')}>
                   <div>
                     <h1>tracker 2020</h1>
                     <h3>project development framework.</h3>
                   </div>
-                    <img className='picture' src={Tracker} alt='tracker' />
+                    <img className={Styles.picture} src={Tracker} alt='tracker' />
 
 
-                </div>
-                <div className='proje' onClick={() => navigate('/project/beatboxbubble')}>
+                </div> */}
+                {/* <div className={Styles.proje} onClick={() => navigate('/project/beatboxbubble')}>
                   <div>
                     <h1>beatbox bubble 2020</h1>
                     <h3>social network with a sampler.</h3>
                     
                   </div>
-                    <img className='picture' src={Buble} alt='buble'/>
-                </div>
+                    <img className={Styles.picture} src={Buble} alt='buble'/>
+                </div> */}
 
-                <div className='proje' onClick={() => navigate('/project/hooper')}>
+                {/* <div className={Styles.proje} onClick={() => navigate('/project/hooper')}>
                   <div>
 
                     <h1>hooper 2020</h1>
                     <h3>social network for hoopers.</h3>
                   </div>
-                    <img className='picture' src={Hooper} alt='hooper' /> 
-                </div>
+                    <img className={Styles.picture} src={Hooper} alt='hooper' /> 
+                </div> */}
                 
             {/* <div>
                 <h1>hooper</h1>
