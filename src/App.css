@@ -4,9 +4,11 @@
   background-color: #2e2e2e;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 
 }
+
+
 .middle{
   margin: 0 auto;
   padding: 20px;
@@ -17,6 +19,13 @@
   /* background-color: red; */
 
 }
+.projects{
+  background-color: #2e2e2e;
+  /* overflow: scroll;
+  display: flex;
+  flex-direction: column; */
+  /* height: 100vh; */
+}
 
 .App p{
   color: white;
@@ -24,7 +33,14 @@
   font-weight: 600;
 }
 .picture{
-  width: 150px;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  align-self: center;
+  object-fit: cover;
+}
+.longPicture{
+  height: 250px;
   border-radius: 10px;
   align-self: center;
 }
@@ -72,12 +88,15 @@
 .proje{
   background-color: darkgray;
   display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
+  /* flex-direction: column; */
+  align-self: center;
+  justify-content: space-between;
   padding: 10px;
+  /* height: auto; */
+  width: 70%;
   border-radius: 10px;
-  flex: 1;
-  height: 100px;
+  /* flex: 1; */
+  /* height: 100px; */
   margin: 10px;
 }
 .proje:hover{
@@ -167,9 +186,9 @@
   background-color: red;
 }
 .footerContainer{
-  position: absolute;
+  /* position: absolute; */
   display: flex;
-  bottom: 0px;
+  /* bottom: 0px; */
   width: 100%;
   align-items: center;
   justify-content: flex-end;
@@ -178,7 +197,7 @@
   background-color: #616161;
 }
 .headerContainer{
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   align-items: center;
   justify-content: space-between;

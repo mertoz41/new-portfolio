@@ -2,6 +2,11 @@ import React, {useState} from 'react'
 import { Modal } from 'semantic-ui-react'
 import { useNavigate } from "react-router-dom";
 import Header from '../components/Header';
+import ArtstoneOne from '../images/artstoneone.jpg'
+import Cezs from '../images/portfolio2.jpg'
+import Tracker from '../images/trackeruno.jpg'
+import Buble from '../images/bubledos.jpg'
+import Hooper from '../images/hoopsuno.jpg'
 const Projects = () => {  
     const [open, setOpen] = useState(false)
     const [type, setType] = useState(null)
@@ -13,40 +18,52 @@ const Projects = () => {
     
     const navigate = useNavigate() 
     return(
-        <div>
+        <div className='projects'>
             <Header />
-            {/* <h2 className="userTitle">projects</h2> */}
-        {/* <div> */}
-            <div className='arow'>
+          
                 <div className='proje' onClick={() => navigate('/project/cezs')}>
+                  <div>
                     <h1>cezs 2022</h1>
                     <h3>music app designed for instrumentalists.</h3>
+                  </div>
+                    <img className='picture' src={Cezs} alt='cezspic' />
                 </div>
                 <div className='proje' onClick={() => navigate('/project/artstone')}>
+                  <div>
                     <h1>Artstone Marble & Granite 2021</h1>
                     <h3>official website of a marble and granite distributor.</h3>
+
+                  </div>
+                    <img className='picture' src={ArtstoneOne} alt='artstone' />
+
                 </div>
-            </div>
-            <div className='arow'>
                 <div className='proje' onClick={() => navigate('/project/tracker')}>
+                  <div>
                     <h1>tracker 2020</h1>
                     <h3>project development framework.</h3>
+                  </div>
+                    <img className='picture' src={Tracker} alt='tracker' />
+
+
                 </div>
                 <div className='proje' onClick={() => navigate('/project/beatboxbubble')}>
+                  <div>
                     <h1>beatbox bubble 2020</h1>
                     <h3>social network with a sampler.</h3>
+                    
+                  </div>
+                    <img className='picture' src={Buble} alt='buble'/>
                 </div>
 
-            </div>
-            <div className='arow'>
                 <div className='proje' onClick={() => navigate('/project/hooper')}>
+                  <div>
+
                     <h1>hooper 2020</h1>
                     <h3>social network for hoopers.</h3>
+                  </div>
+                    <img className='picture' src={Hooper} alt='hooper' /> 
                 </div>
-                <div className='proje'>
-
-                </div>
-            </div>
+                
             {/* <div>
                 <h1>hooper</h1>
             </div> */}
