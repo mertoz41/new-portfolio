@@ -1,0 +1,16 @@
+.projectPicture{
+    width: 100%;
+}
+.projectWriting{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.title{
+    color: white;
+    border-bottom: 2px solid #b18e67;
+    display: inline-block;
+}
+.titleSection{
+    display: flex;
+    justify-content: space-between;
+}

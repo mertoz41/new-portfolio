@@ -16,7 +16,21 @@ import Tracktre from './images/tracktre.jpg'
 // import Landinbir from './images/landinbir.jpg'
 // import Landiniki from './images/landiniki.jpg'
 // import Landinuc from './images/landinuc.jpg'
-
+const chooseProject = project => {
+    let searchedProject 
+    if (project === 'hooper'){
+        searchedProject = {
+            name: 'Hooper',
+            pictures: [Hoopstre, Hoopsuno, Hoopsdos, ],
+            what: 'Hooper app is a basketball platform that displays basketball courts on the map and provides forums on each location to organize games. Feedbacks are exchanged between users on profile pages, which allows users to anticipate talent.',
+            why: "This was the first project I have built on my own for the fourt module project at the Flatiron Bootcamp. Upon learning React, I wanted to get familiar with maps to use it later for Cezs. Brainstorming on what to use the maps for didn't take long as I immediately thought about my passion: basketball. I recalled the times when a couple friends and I wished a way to find kids like us to hoop in Izmir and developed this application for the ten year-old Mert.",
+            tech: 'This app was developed in seven days with daily stand-up and stand-down meetings to track progress with coaches. Authentication was implemented with JWT while apps state was managed with Redux. Semantic UI was utilized for styling and component testing was experimented with Enzyme.',
+            gitHub: 'https://github.com/mertoz41/hooper-front-end'
+        }
+    }
+    return searchedProject
+    // console.log(project)
+}
 const cezs = {
         name: 'CEZS',
         description: 'what does this app do',
@@ -38,15 +52,6 @@ const beatboxbubble = {
     name: 'Beatbox Bubble',
     pictures: [Bubleuno, Bubledos, BubleTre]
 }
-const hooper = {
-    name: 'Hooper',
-    pictures: [Hoopsuno,Hoopsdos, Hoopstre]
-    // hooper app was a project I built in the fourth module of the Flatiron school bootcamp 
-    // my approach to this project was to work with maps so that I could use it for Cezs.
-    // While brainstorming on what I could use the maps for, 
-    // I recalled a struggle my friends and I had growing up, going to different courts around the city to play with different people
-    // to provide the map and allow interaction between users
-    // 
-}
 
-export {cezs, artstone, tracker, beatboxbubble, hooper}
+
+export {chooseProject}

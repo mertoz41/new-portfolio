@@ -23,26 +23,26 @@ const Projects = () => {
           <p>Projects</p>
           <div className={Styles.oneProject} >
             <p onClick={() => navigate('/project/cezs')} className={Styles.title}>Cezs, <span className={Styles.secondary}>Coming soon</span></p>
-            <p>music platform for instrumentalists</p>
+            <p>music platform for instrumentalists.</p>
           </div>
           <div className={Styles.oneProject} >
             <p onClick={() => navigate('/project/artstone')} className={Styles.title}>Artstone Marble & Granite, <span className={Styles.secondary}>Client project</span></p>
-            <p>Official website of marble and granite producer</p>
+            <p>Official website of marble and granite producer.</p>
 
           </div>
           <div className={Styles.oneProject}>
 
           <p onClick={() => navigate('/project/tracker')} className={Styles.title}>Project Tracker</p>
-          <p>Project development framework</p>
+          <p>Project development framework.</p>
           </div>
           <div className={Styles.oneProject} >
           <p onClick={() => navigate('/project/beatboxbubble')} className={Styles.title}>Beatbox Bubble</p>
-          <p>Music platform built around a sampler</p>
+          <p>Music platform built around a sampler.</p>
 
           </div>
           <div className={Styles.oneProject} >
             <p onClick={() => navigate('/project/hooper')} className={Styles.title}>Hooper</p>
-            <p>music platform for instrumentalists</p>
+            <p>Basketball platform for hoopers.</p>
 
           </div>
 

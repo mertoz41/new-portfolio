@@ -13,7 +13,7 @@
 .sections{
     display: flex;
 }
-.sections div{
+.occupation{
     margin-left: 10px;
 }
 .name{
@@ -22,7 +22,7 @@
 
 .primary{
     color: white;
-    border-bottom: 2px solid #00fa9a;
+    border-bottom: 2px solid #b18e67;
     margin-right: 10px;
 }
 .primary:hover{
