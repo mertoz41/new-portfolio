@@ -14,7 +14,7 @@
   height: 100vh;
   width: 50%;
   overflow: scroll;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   /* z-index: -1; */
   /* background-color: red; */
 
@@ -32,6 +32,12 @@ padding: 10px;
   color: white;
   font-size: large;
   font-weight: 600;
+}
+.avatar{
+  height: 300px;
+  margin: 0 auto;
+  align-self: center;
+  margin-bottom: 100px;
 }
 
 .longPicture{
@@ -227,9 +233,11 @@ padding: 10px;
   color: white;
 }
 .section{
-  background-color: rgba(17, 17, 17, 0.3);
+  display: flex;
+  flex-direction: column;
 
-  border-radius: 20px;
+  justify-content: center;
+
   padding: 20px;
 }
 

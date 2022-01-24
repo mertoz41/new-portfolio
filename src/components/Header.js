@@ -7,6 +7,11 @@ const Header = () => {
 
     return (
         <div className={Styles.container}>
+            {window.location.pathname === '/about' ? 
+            <div>
+                <h3 className={Styles.name}>About</h3>
+            </div>
+            :    
             <div className={Styles.sections}>
                 <div>
                     <h3 className={Styles.name}>Mert Özkaynak</h3>
@@ -15,6 +20,7 @@ const Header = () => {
                     <h3 className={Styles.secondary}>web developer</h3>
                 </div>
             </div>
+            }
             <div className={Styles.sections}>
                 {window.location.pathname !== '/' && 
                 <div onClick={() => navigate('/')}>

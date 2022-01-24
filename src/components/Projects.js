@@ -21,12 +21,12 @@ const Projects = () => {
     return(
         <div className={Styles.projects}>        
           <p>Projects</p>
-          <div className={Styles.oneProject} >
+          {/* <div className={Styles.oneProject} >
             <p onClick={() => navigate('/project/cezs')} className={Styles.title}>Cezs, <span className={Styles.secondary}>Coming soon</span></p>
             <p>music platform for instrumentalists.</p>
-          </div>
+          </div> */}
           <div className={Styles.oneProject} >
-            <p onClick={() => navigate('/project/artstone')} className={Styles.title}>Artstone Marble & Granite, <span className={Styles.secondary}>Client project</span></p>
+            <p onClick={() => toWeb('https://theartstone.com')} className={Styles.title}>Artstone Marble & Granite, <span className={Styles.secondary}>Client project</span></p>
             <p>Official website of marble and granite producer.</p>
 
           </div>
