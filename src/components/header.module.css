@@ -22,8 +22,10 @@
 
 .primary{
     color: white;
-    border-bottom: 2px solid #b18e67;
+    border-bottom: 2px solid #aa9499;
     margin-right: 10px;
+    cursor: pointer;
+
 }
 .primary:hover{
     border-bottom: 2px solid transparent;

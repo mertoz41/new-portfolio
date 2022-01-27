@@ -7,14 +7,16 @@
     /* padding: 10px; */
   }
   .oneProject{
-    margin-left: 10px;
-    margin-bottom: 30px;
-    padding: 10px;
+    /* margin-left: 10px; */
+    margin-bottom: 20px;
+    /* padding: 10px; */
 
   }
   .title{
-    border-bottom: 2px solid #b18e67;
+    border-bottom: 2px solid #aa9499;
     display: inline-block;
+    font-size: small;
+    cursor: pointer;
   }
   .secondary{
     color: darkgray;
@@ -25,10 +27,8 @@
   .proje:hover{
     background-color: rgb(212, 212, 212);
   }
-  .picture{
-    width: 250px;
-    height: 250px;
-    border-radius: 10px;
-    align-self: center;
-    object-fit: cover;
+ 
+  .description{
+    font-size: 16px !important;
   }
+  
