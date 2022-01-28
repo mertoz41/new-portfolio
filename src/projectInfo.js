@@ -50,9 +50,15 @@ const chooseProject = project => {
         searchedProject = {
             name: 'Cezs',
             pictures: [CezsBir, CezsIki, CezsUc],
-            what: 'Cezs is a social network wrapped around a community music library that is flourished by instrumentalists. Designed for instrumentalists, Cezs provides an exclusive music platform where users express themselves through music and instruments, discover others with similar taste, and pinpoint upcoming events.',
-            why: "This is the first project I thought of once I grasped backend and frontend coding. The spark behind the idea is a conversation I had with a good friend a long time ago, whom wanted to make a living as a musician. While he wanted to do so playing for the council, a question I had was 'where do musicians exist online?' which he went on to answer 'nowhere special really, just popular social media.' Then I researched to find out that musician apps other than SoundCloud are just like SoundCloud, sound files. While instrumentalists are underrepresented in these environments, these platforms mainly consist of laptop musicians. The alternative on the other hand is media platforms, but such content goes unnoticed in the vastness of these platforms.",
-            tech: "This app was built in a month, while I have utilized Redux for app's general state management and React Router for navigation between routes in the frontend, and facilitated data persistence with Active Record into Postgres database in a Rails backend.",
+            what: 'Cezs is a social network wrapped around a community music library that is flourished by instrumentalists. Designed for instrumentalists, Cezs provides an exclusive music platform where users express themselves through music and instruments. The library is filtered by instruments, genres, location, and covers simultaneously appear in their respective song, album, and artist pages. While these pages allow users to interact by music taste, maps allows discover others by location and pinpoint upcoming events like live performances and auditions.',
+            // '.  discover others with similar taste, and pinpoint upcoming events.',
+            // Cezs is a music platform designed for instrumentalists.
+            // Community music library played by instrumentalists that is filtered by instruments, genres, and location, 
+            // where covers appear in their respective song, album, and artist pages.
+
+            why: "This is the first project I thought of once I grasped backend and frontend coding. Idea formed as I binded the question I asked my friend a long time ago with the observation on musicians platforms of today. While the question was 'where do musicians exist online?', I observed musicians platforms to be mostly career driven, dominated by users looking to break into the industry with music made on their laptops. Although hobbyists nowadays share their videos on popular social media, they get lost in the vastness of these platforms.",
+            whyTwo: 'With Cezs I wanted to build a music platform focused on instruments, where users interact exclusively through music. Whether an amateur or a professional, I wanted this platform to be for everyone to listen to their favorite songs from talented instrumentalists and connect with others that share similar music taste.',
+            tech: ".",
             gitHub: 'https://github.com/mertoz41/tracker-frontend'
         }
     }
