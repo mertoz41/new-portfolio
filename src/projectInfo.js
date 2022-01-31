@@ -16,13 +16,14 @@ import Tracktre from './images/tracktre.jpg'
 // import Landinbir from './images/landinbir.jpg'
 // import Landiniki from './images/landiniki.jpg'
 // import Landinuc from './images/landinuc.jpg'
+
 const chooseProject = project => {
     let searchedProject 
     if (project === 'hooper'){
         searchedProject = {
             name: 'Hooper',
             pictures: [Hoopstre, Hoopsuno, Hoopsdos],
-            what: 'Hooper app is a basketball platform that displays basketball courts on the map and provides forums on each location to organize games. Feedbacks are exchanged between users on profile pages, which allows users to anticipate talent.',
+            what: 'Hooper app is a basketball platform that displays basketball courts on the map and provides forums on each location to organize games. Feedbacks are exchanged between users, which allows users to anticipate talent.',
             why: "This was the first project I have built on my own for the fourt module project at botcamp. Upon learning React, I wanted to get familiar with maps to use it later for Cezs. Brainstorming on what to use the maps for didn't take long as I immediately thought about my passion: basketball. I recalled the times when a couple friends and I wished a way to find kids like us to hoop in Izmir and developed this application for the ten year-old Mert.",
             tech: 'This app was developed in seven days with daily stand-up and stand-down meetings to track progress with coaches. Authentication was implemented with JWT while apps state was managed with Redux. Semantic UI was utilized for styling and component testing was experimented with Enzyme.',
             gitHub: 'https://github.com/mertoz41/hooper-front-end'
@@ -50,14 +51,15 @@ const chooseProject = project => {
         searchedProject = {
             name: 'Cezs',
             pictures: [CezsBir, CezsIki, CezsUc],
-            what: 'Cezs is a social network wrapped around a community music library that is flourished by instrumentalists. Designed for instrumentalists, Cezs provides an exclusive music platform where users express themselves through music and instruments. The library is filtered by instruments, genres, location, and covers simultaneously appear in their respective song, album, and artist pages. While these pages allow users to interact by music taste, maps allows discover others by location and pinpoint upcoming events like live performances and auditions.',
+            what: 'Cezs is a social network wrapped around a music library that is flourished by instrumentalists. Designed for instrumentalists, Cezs provides an exclusive platform where users interact with others through music and pinpoint upcoming events on the map. ',
+            // While these pages allow users to interact by music taste, maps allows discover others by location and pinpoint upcoming events like live performances and auditions.',
             // '.  discover others with similar taste, and pinpoint upcoming events.',
             // Cezs is a music platform designed for instrumentalists.
             // Community music library played by instrumentalists that is filtered by instruments, genres, and location, 
             // where covers appear in their respective song, album, and artist pages.
 
-            why: "This is the first project I thought of once I grasped backend and frontend coding. Idea formed as I binded the question I asked my friend a long time ago with the observation on musicians platforms of today. While the question was 'where do musicians exist online?', I observed musicians platforms to be mostly career driven, dominated by users looking to break into the industry with music made on their laptops. Although hobbyists nowadays share their videos on popular social media, they get lost in the vastness of these platforms.",
-            whyTwo: 'With Cezs I wanted to build a music platform focused on instruments, where users interact exclusively through music. Whether an amateur or a professional, I wanted this platform to be for everyone to listen to their favorite songs from talented instrumentalists and connect with others that share similar music taste.',
+            why: "This is the first project I thought of once I grasped backend and frontend coding. Idea formed as I binded the question I asked my friend a long time ago with the observation on musicians platforms of today. While the question was 'where do musicians exist online?', I observed musicians platforms to be mostly career driven, in the shape of sound files, dominated by users looking to break into the industry with music made on their laptops. Although hobbyists nowadays share their videos on popular social media, they get lost in the vastness of these platforms.",
+            whyTwo: 'With Cezs I built a music platform focused on instruments for real musicians to play their favorite songs and contribute to the community music library. Whether an amateur, professional, or an enthusiast, I wanted this platform to be for everyone to listen to their favorite songs from talented instrumentalists and connect with others that share similar music taste.',
             tech: ".",
             gitHub: 'https://github.com/mertoz41/tracker-frontend'
         }

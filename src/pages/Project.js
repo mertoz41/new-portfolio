@@ -3,6 +3,7 @@ import {chooseProject} from '../projectInfo'
 import Header from '../components/Header'
 import Styles from './project.module.css'
 import { Button } from 'semantic-ui-react'
+import {useSpring, animated} from 'react-spring'
 
 const Project = (props) => {
     const [project, setProject] = useState(null)
@@ -15,9 +16,11 @@ const Project = (props) => {
     const toWeb = (web) =>{
         window.open(web, '_blank')
     }
+    const animation = useSpring({to: {opacity: 1}, from: {opacity: 0}})
+
     // 
     return(
-        <div>
+        <animated.div style={animation}>
             <Header />
             {project &&
             <div>
@@ -42,7 +45,7 @@ const Project = (props) => {
             <img className={Styles.projectPicture} src={project.pictures[2]} alt='projeuno'/>
             </div>
             }
-        </div>
+        </animated.div>
     )
 }
 

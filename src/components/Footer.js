@@ -8,11 +8,6 @@ const Footer = () => {
     return (
         <div className={Styles.container}>
             <div>
-                <p>
-                ©2022 Mert Özkaynak
-                </p>
-            </div>
-            <div>
                 <Button circular color="linkedin" icon="linkedin" onClick={() => toWeb('https://www.linkedin.com/in/mert-ozkaynak')}/>    
                 <Button circular icon="github" onClick={() => toWeb('https://github.com/mertoz41')} />
             </div>

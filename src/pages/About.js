@@ -1,17 +1,21 @@
 import React from 'react'
 import Header from '../components/Header'
 import Mertito from '../images/mert-cropped.jpg'
+import {useSpring, animated} from 'react-spring'
 const About = () => {
+  const animation = useSpring({to: {opacity: 1}, from: {opacity: 0}})
+
     return(
-        <div>
+        <animated.div style={animation}>
             <Header />
             {/* <h2 className="userTitle">about</h2> */}
         <div className="section">
             <img src={Mertito} alt="mert" className="avatar"/>
           <p>
-            Hello, I am Mert Özkaynak, a Washington DC based creative developer focused on user-empathetic experiences for digital interfaces.
-            I currently work as a freelancer, prioritizing client products as they come while working on personal projects.
-            Although my passion is to build products that bring people together, I embrace building products in different industries which allows me to gain more knowledge.
+            I am Mert Özkaynak, a Washington DC based creative developer.
+            {/* Currently a freelancer, working on personal projects and prioritizing clients as they come. */}
+            {/* Currently working as a freelancer, prioritizing client products as they come while working on personal projects. */}
+            {/* Although my passion is to build products that bring people together, I embrace building products in different industries which allows me to gain more knowledge. */}
             {/* Hello, I am Mert Özkaynak, a Washington DC based creative developer with a passion for building products that bring people together. */}
 
             {/* I am a former professional basketball player, transitioned to programming through a bootcamp where I learned full-stack web development with Ruby on Rails and  */}
@@ -25,7 +29,7 @@ const About = () => {
             Pleasure to meet you. <span>What is your story?</span>
           </p>
         </div>
-        </div>
+        </animated.div>
     )
 }
 
