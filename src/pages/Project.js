@@ -35,7 +35,7 @@ const Project = (props) => {
             <p className={Styles.projectWriting}>{project.what}</p>
             <img className={Styles.projectPicture} src={project.pictures[0]} alt='projeuno'/>
             <p className={Styles.projectWriting}>{project.why}</p>
-            {project.name == 'Cezs' && 
+            {project.name === 'Cezs' && 
             <p className={Styles.projectWriting}>{project.whyTwo}</p>
 
             }

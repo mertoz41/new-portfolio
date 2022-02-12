@@ -1,8 +1,6 @@
-import CezsBir from './images/portfolio2.jpg'
-import CezsIki from './images/porfolioshot.jpg'
-import CezsUc from './images/anothercez.jpg'
-import Artstoneone from './images/artstoneone.jpg'
-import Arttwo from './images/arttwo.jpg'
+// import CezsBir from './images/portfolio2.jpg'
+// import CezsIki from './images/porfolioshot.jpg'
+// import CezsUc from './images/anothercez.jpg'
 import Trackeruno from './images/trackeruno.jpg'
 import Trackerdos from './images/trackerdos.jpg'
 import Hoopsuno from './images/hoopsdos.jpg'
@@ -11,7 +9,6 @@ import Bubleuno from './images/bubledos.jpg'
 import BubleTre from './images/bubleone.jpg'
 import Bubledos from './images/bubletre.jpg'
 import Hoopstre from './images/hoopsuno.jpg'
-import Arttre from './images/arttre.jpg'
 import Tracktre from './images/tracktre.jpg'
 // import Landinbir from './images/landinbir.jpg'
 // import Landiniki from './images/landiniki.jpg'
@@ -42,52 +39,33 @@ const chooseProject = project => {
             name: 'Project Tracker',
             pictures: [Trackeruno, Trackerdos, Tracktre],
             what: 'Project Tracker is a backlog-oriented project development framework that provides a progress dashboard to manage and execute projects. While this approach helps users prioritize features that bring most value, objectives to accomplish such features projects progress in percentage.',
-            why: "I built this app out of necessity of staying organized with notes and goals throughout developing projects. Aside from organizing features and deliverables, I wanted to know the progress of each project in one place.",
-            tech: "This app was built in a month, while I have utilized Redux for app's general state management and React Router for navigation between routes in the frontend, and facilitated data persistence with Active Record into Postgres database in a Rails backend.",
+            why: "I built this app out of necessity of staying organized with notes and goals throughout developing projects. Aside from organizing features and deliverables, I wanted to know the progress of all projects in one place.",
+            tech: "This app was built in a month, while I have utilized Redux for app's general state and React Router for navigation between routes in the frontend, and facilitated data persistence with Active Record into Postgres database in a Rails backend.",
             gitHub: 'https://github.com/mertoz41/tracker-frontend'
         }
     } 
-    else if (project === 'cezs'){
-        searchedProject = {
-            name: 'Cezs',
-            pictures: [CezsBir, CezsIki, CezsUc],
-            what: 'Cezs is a social network wrapped around a music library that is flourished by instrumentalists. Designed for instrumentalists, Cezs provides an exclusive platform where users interact with others through music and pinpoint upcoming events on the map. ',
-            // While these pages allow users to interact by music taste, maps allows discover others by location and pinpoint upcoming events like live performances and auditions.',
-            // '.  discover others with similar taste, and pinpoint upcoming events.',
-            // Cezs is a music platform designed for instrumentalists.
-            // Community music library played by instrumentalists that is filtered by instruments, genres, and location, 
-            // where covers appear in their respective song, album, and artist pages.
+    // else if (project === 'cezs'){
+    //     searchedProject = {
+    //         name: 'Cezs',
+    //         pictures: [CezsBir, CezsIki, CezsUc],
+    //         what: 'Cezs is a social network wrapped around a music library that is flourished by instrumentalists. Designed for instrumentalists, Cezs provides an exclusive platform where users interact with others through music and pinpoint upcoming events on the map. ',
+    //         // While these pages allow users to interact by music taste, maps allows discover others by location and pinpoint upcoming events like live performances and auditions.',
+    //         // '.  discover others with similar taste, and pinpoint upcoming events.',
+    //         // Cezs is a music platform designed for instrumentalists.
+    //         // Community music library played by instrumentalists that is filtered by instruments, genres, and location, 
+    //         // where covers appear in their respective song, album, and artist pages.
 
-            why: "This is the first project I thought of once I grasped backend and frontend coding. Idea formed as I recalled a question I asked my friend a long time ago, followed by research on musicians platforms of today. While the question was 'where do musicians exist online?', I observed such platforms to be career driven, in the shape of sound files, dominated by users looking to break into the industry with music made on their laptops. Although hobbyists nowadays share their videos on popular social media, they get lost in the vastness of these platforms.",
-            whyTwo: 'With Cezs I built a music platform focused on instruments for real musicians to play their favorite songs and contribute to the community music library. Whether an amateur, professional, or an enthusiast, I wanted this platform to be for everyone to listen to their favorite songs from talented instrumentalists and connect with others that share similar music taste.',
-            tech: "Cezs is a work in progress.",
-            gitHub: 'https://github.com/mertoz41/tracker-frontend'
-        }
-    }
+    //         why: "This is the first project I thought of once I grasped backend and frontend coding. Idea formed as I recalled a question I asked my friend a long time ago, followed by research on musicians platforms of today. While the question was 'where do musicians exist online?', I observed such platforms to be career driven, content as sound files, and dominated by users looking to break into the industry with music made on their laptops. Although hobbyists nowadays share their videos on popular social media, they get lost in the vastness of these platforms.",
+    //         whyTwo: 'I wanted Cezs to be of music`s essence and built a platform focused on instruments where users perform their talents in front of the camera.',
+    //         // for real musicians to play their favorite songs and contribute to the community music library. Whether an amateur, professional, or an enthusiast, I wanted this platform to be for everyone to listen to their favorite songs from talented instrumentalists and connect with others that share similar music taste.',
+    //         tech: "Cezs is work in progress.",
+    //         gitHub: 'https://github.com/mertoz41/tracker-frontend'
+    //     }
+    // }
     return searchedProject
     // console.log(project)
 }
-const cezs = {
-        name: 'CEZS',
-        description: 'what does this app do',
-        story: 'why this app',
-        technology: 'technology used',
-        pictures: [CezsBir, CezsIki, CezsUc]
-}
-const artstone = {
-    name: "artstone marble and granite",
-    pictures: [Artstoneone, Arttwo, Arttre]
 
-}
-const tracker = {
-    name: 'Project Tracker',
-    pictures: [Trackeruno, Trackerdos, Tracktre]
-    
-}
-const beatboxbubble = {
-    name: 'Beatbox Bubble',
-    pictures: [Bubleuno, Bubledos, BubleTre]
-}
 
 
 export {chooseProject}

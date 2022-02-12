@@ -4,15 +4,19 @@
 .projectWriting{
     margin-bottom: 40px;
     margin-top: 40px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 .title{
     color: white;
     border-bottom: 2px solid #aa9499;
     display: inline-block;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
 .titleSection{
     display: flex;
     justify-content: space-between;
+}
+
+.me{
+    background-color: red;
 }

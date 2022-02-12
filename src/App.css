@@ -10,21 +10,16 @@
 
 .middle{
   margin: 0 auto;
-  /* padding: 20px; */
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 50%;
   overflow: scroll;
-  /* margin-top: 40px; */
-  /* z-index: -1; */
-  /* background-color: red; */
-
 }
-
-.intro{
-/* border: 3px solid salmon; */
-margin-top: 20px;
-margin-bottom: 20px;
-padding: 10px; 
+.me{
+  display: flex;
+  justify-content: center;
 }
 ul li {
   color: #aa9499
@@ -35,390 +30,80 @@ ul li {
 
 .App p{
   color: white;
-  font-size: large;
+  font-size: medium;
   font-weight: 600;
 }
 .avatar{
-  height: 300px;
-  margin: 0 auto;
+  height: 150px;
   align-self: center;
-  margin-bottom: 100px;
+  margin: 20px;
+  border-radius: 50%;
+}
+.me p{
+  justify-content: center;
+}
+.me div{
+  align-self: center;
 }
 
-.longPicture{
-  height: 250px;
-  border-radius: 10px;
-  align-self: center;
-}
-.pictureSpace{
-  width: 500px;
-  height: 500px;
 
-  margin: 0 auto;
-}
 .middle::-webkit-scrollbar {
   display: none;
 }
 
-.cloudvid{
-  position: absolute;
-  z-index: -1;
-  object-fit: cover;
-}
-.contactform{
-  /* background-color: red; */
-  text-align: center;
-}
-.contactform input{
-  background-color: transparent;
-  margin-top: 30px;
-  font-size: large;
-  color: white;
-  border-width: 0px;
-  border-bottom: 2px solid white;
-}
-.contactform input::placeholder{
-  color: #2e2e2e
-}
-.contactform textarea::placeholder{
-  color: #2e2e2e
-}
-.contactform textarea{
-  font-size: large;
-  color: white;
-  background-color: transparent;
-  margin-top: 30px;
-  border-width: 0px;
-  border-bottom: 1px solid white;
-}
 
 
-.arow{
-  display: flex;
-  justify-content: space-between;
-}
-
-
-
-.bigpic{
-  width: 500px;
-  height: 500px;
-}
-.webSpace {
-  width: 800px;
-  height: 500px;
-  margin: 0 auto;
-
-}
-.webpic{
-  width: 800px;
-  height: 500px;
-
-}
-.coloredFont{
-  color: black;
-  border-bottom: 2px solid whitesmoke;
-
-  /* background-color: whitesmoke;
-  padding: 5px;
-  border-radius: 20px; */
-  /* font-weight: bold; */
-}
-.inputsubmit{
-  background-color: #00fa9a;
-}
-
-.projectpic{
-  width: 200px;
-  height: 150px;
-  box-shadow: 0px 0px 10px 2px #2e2e2e;
-
-}
-.projectpic:hover{
-  box-shadow: 0px 0px 0px 0px transparent;
-}
-.phonepic{
-  width: 200px;
-  box-shadow: 0px 0px 10px 1px #2e2e2e;
-}
-.phonepic:hover{
-  box-shadow: 0px 0px 0px 0px transparent;
-}
-
-.job{
-  /* height: auto; */
-  display: flex;
-  /* justify-content: space-around; */
-  width: auto;
-  /* align-self: center; */
-  flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.stackSection{
-  margin-top: 20px;
-}
-.stackSection p{
-  font-size: medium;
-}
-.userTitle{
-  color: white;
-  text-align: center;
-
-}
-.welcomeContainer{
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  /* justify-content: center; */
-  /* align-self: center; */
-  /* height: auto; */
-  /* background-color: red; */
-}
-.footerContainer{
-  /* position: absolute; */
-  display: flex;
-  /* bottom: 0px; */
-  width: 100%;
-  align-items: center;
-  justify-content: flex-end;
-  height: 60px;
-  padding: 10px;
-  padding-right: 10px;
-  background-color: #616161;
-}
-
-.headerRight{
-  display: flex;
-}
-.headerButon{
-  margin-right: 10px;
-}
-.headerButon h2:hover{
-  color: #00fa9a;
-}
-.selectedTitle{
-  color: #00fa9a;
-}
-.headerLeft h3:hover{
-  color: #00fa9a;
-}
-
-
-.headerLeft{
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-
-}
-.top{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 20px;
-  padding: 20px;
-}
-
-.bottomSection{
-  display: flex;
-  justify-content: flex-end;
-}
-.bottomSection div{
-  align-self: center;
-
-}
-
-.topSection{
-  display: flex;
-  margin-bottom: 10px;
-  justify-content: center;
-}
-
-.info h3{
-  color: white;
-}
-.section{
-  display: flex;
-  flex-direction: column;
-
-  justify-content: center;
-
-  padding: 20px;
-}
-.section p{
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.titlewriting{
-  color: white;
-  margin: 0 auto;
-  margin-bottom: 5px;
-  border-bottom: 2px solid darkgray;
-  font-size: x-large;
-  text-align: center;
-}
-.jobTitle{
-  /* width: 100%; */
-  /* background-color: red; */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-between;
-}
-.info{
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 10px;
-}
-.buttons{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.info h2{
+.touch{
   text-decoration: underline;
-  text-decoration-color: #00fa9a;
+  cursor: pointer;
 }
+.touch:hover{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+.section{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+
 .titleSection{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* background-color: red; */
-}
-.titleSection h4{
-  margin-left: 20px;
-}
-.titleSection h3{
-  border-width: 2px;
-  border-color: darkgray;
 }
 
-.appname{
-  align-self: flex-start;
-}
-.about h1{
-  /* text-align: center; */
-  /* background-color: #00fa9a; */
-  color: white;
-  padding: 5px
-}
 
-.place div{
-  align-self: flex-end;
-}
-.button{
-  align-self: center;
-}
-.button h4{
-  background-color: whitesmoke;
-  padding: 6px;
-  border-radius: 20px;
-}
-.button h4:hover{
-  background-color: darkgray;
-  /* color: #00fa9a */
-}
-/* .section p{
-  font-size: medium;
-} */
-
-
-.place{
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.images{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  /* width: 100%; */
-}
-.projek{
-  height: auto;
-  width: 100%;
-  border-radius: 20px;
-  /* padding-bottom: 30px; */
-  margin-bottom: 20px;
-  background-color: rgba(17, 17, 17, 0.3);
-  padding: 20px;
-  /* border-bottom: 2px solid #2e2e2e; */
-  /* border-bottom-color: red; */
-}
 
 @media screen and (max-width: 768px) {
   .App{
     width: 100%;
-    /* background-color: #2e2e2e; */
   }
   .middle{
-    /* padding: 10px; */
     width: 95%;
   }
-  .buttons{
+
+  .avatar{
+    height: 200px;
+
+  }
+  .me{
     flex-direction: column;
-    align-self: flex-end;
+    margin-bottom: 20px;
   }
-  .pictureSpace{
-    width: 400px;
-    height: 400px;
-  }
-  .bigpic{
-    width: 400px;
-    height: 400px;
-  }
-  .webSpace{
-    width: 400px;
-    height: 300px;
-  }
-  .webpic{
-    width: 400px;
-    height: 300px;
-  }
-  .about{
-    flex-direction: column;
-  }
-  .about h1{
-    text-align: center;
-  }
-  .about div{
-    align-self: center;
-  }
-  .info h2{
-    text-align: center;
-  }
-  .info p{
-    text-align: center;
-  }
-  .title{
-    flex-direction: column;
-  }
-  .projectpic{
-    width: 90px;
-    height: 70px;
-  }
+
+
+
+
  
-  .phonepic{
-    width: 90px;
-  }
-  .top{
-    padding: 0px;
-    flex-direction: column;
-  }
-  .place{
-    flex-direction: column;
-  }
-  .place div{
-    align-self: center;
-  }
-  .info{
-    padding: 0px
-  }
-  .picture{
-    margin: 0 auto;
-    width: 250px;
-  }
+ 
 }
