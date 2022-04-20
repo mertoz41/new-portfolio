@@ -7,10 +7,11 @@ const About = () => {
 
     return(
         <animated.div style={animation}>
-          <Header />
+          {/* <Header /> */}
           <div className="section">
-            <div className="me">
-              <img src={Mertito} alt="mert" className="avatar"/>
+            {/* <img src={Mertito} alt="mert" className="avatar"/> */}
+            <p>I'm a software engineer at ThinkNimble, a startup agency for socially focused business. </p>
+            {/* <div className="me">
               <div>
 
               
@@ -35,7 +36,7 @@ const About = () => {
             </p>
             <p>
               Nice to meet you. <span onClick={() => window.open('mailto:mertozka41@gmail.com')} className="touch">Let's get in touch</span>. 
-            </p>
+            </p> */}
 
           </div>
         </animated.div>

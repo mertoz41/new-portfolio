@@ -9,7 +9,7 @@ const Footer = () => {
         <div className={Styles.container}>
             <div>
                 <Button circular color="linkedin" icon="linkedin" onClick={() => toWeb('https://www.linkedin.com/in/mert-ozkaynak')}/>    
-                <Button circular icon="github" onClick={() => toWeb('https://github.com/mertoz41')} />
+                <Button circular icon="envelope" onClick={() => window.open('mailto:mertozka41@gmail.com')} />
             </div>
         </div>
     )
